@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
         content="Sumit Steel, led by Sumit Raut, provides iron and steel products, profile cutting services, dealership and stockist support in Bhosari, Pune." />
-    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="theme-color" content="#000000" />
     <meta property="og:title" content="Sumit Steel | Iron & Steel Dealers, Stockist & Profile Cutting" />
     <meta property="og:description"
         content="Expert profile cutters, dealers & stockist of Iron & Steel. 30 Years of Experience. Bhosari, Pune." />
     <meta property="og:type" content="website" />
-    <title>SUMIT STEEL</title>
+    <title>Sumit Steel | Iron & Steel Dealers, Stockist & Profile Cutting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +19,7 @@
         rel="stylesheet" />
     <style>
         /* ============================================================
-           RESET & BASE — LUXURY BLACK / WHITE / GOLD
+           RESET & BASE — PURE BLACK & WHITE LUXURY
            ============================================================ */
         *,
         *::before,
@@ -30,47 +30,57 @@
         }
 
         :root {
-            --bg-primary: #0a0a0a;
-            --bg-secondary: #111111;
-            --bg-card: #161616;
-            --bg-card-hover: #1c1c1c;
-            --bg-header: rgba(10, 10, 10, 0.92);
-            --bg-header-solid: rgba(10, 10, 10, 0.98);
-            --bg-footer: #050505;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f7f7f7;
+            --bg-card: #ffffff;
+            --bg-card-hover: #fafafa;
+            --bg-header: rgba(255, 255, 255, 0.94);
+            --bg-header-solid: rgba(255, 255, 255, 0.99);
+            --bg-footer: #0a0a0a;
             --bg-hero: #0a0a0a;
-            --bg-input: #1a1a1a;
-            --bg-badge: #111111;
+            --bg-input: #ffffff;
+            --bg-badge: #0a0a0a;
 
-            --text-primary: #ffffff;
-            --text-secondary: #b0b0b0;
-            --text-muted: #777777;
+            --text-primary: #0a0a0a;
+            --text-secondary: #4a4a4a;
+            --text-muted: #8a8a8a;
             --text-on-dark: #ffffff;
-            --text-on-dark-secondary: #cccccc;
+            --text-on-dark-secondary: #b8b8b8;
 
-            --border-color: #2a2a2a;
-            --border-light: #222222;
-            --border-focus: #c9a84c;
+            --border-color: #e5e5e5;
+            --border-light: #f0f0f0;
+            --border-focus: #0a0a0a;
 
-            --accent-gold: #c9a84c;
-            --accent-gold-light: #e0c060;
-            --accent-gold-dark: #a8882e;
-            --accent-white: #ffffff;
+            --black: #0a0a0a;
+            --black-dark: #000000;
+            --black-light: #1a1a1a;
+            --gray-100: #f7f7f7;
+            --gray-200: #e5e5e5;
+            --gray-300: #d4d4d4;
+            --gray-400: #a3a3a3;
+            --gray-500: #737373;
+            --gray-600: #525252;
+            --gray-700: #404040;
+            --gray-800: #262626;
+            --gray-900: #171717;
 
-            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.5);
-            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.6);
-            --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.7);
-            --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.8);
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.08);
+            --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.12);
+            --shadow-black: 0 8px 32px rgba(0, 0, 0, 0.25);
 
-            --radius-sm: 6px;
-            --radius-md: 10px;
-            --radius-lg: 14px;
-            --radius-xl: 20px;
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 18px;
+            --radius-xl: 26px;
 
-            --transition-fast: 180ms cubic-bezier(0.22, 1, 0.36, 1);
-            --transition-base: 250ms cubic-bezier(0.22, 1, 0.36, 1);
-            --transition-smooth: 300ms cubic-bezier(0.22, 1, 0.36, 1);
-            --transition-slow: 500ms cubic-bezier(0.22, 1, 0.36, 1);
-            --transition-reveal: 700ms cubic-bezier(0.22, 1, 0.36, 1);
+            --transition-fast: 200ms cubic-bezier(0.34, 1.56, 0.64, 1);
+            --transition-base: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+            --transition-smooth: 400ms cubic-bezier(0.22, 1, 0.36, 1);
+            --transition-slow: 600ms cubic-bezier(0.22, 1, 0.36, 1);
+            --transition-reveal: 800ms cubic-bezier(0.22, 1, 0.36, 1);
+            --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
 
             --header-height: 72px;
             --header-height-scrolled: 60px;
@@ -127,14 +137,14 @@
         }
 
         :focus-visible {
-            outline: 2px solid var(--accent-gold);
+            outline: 2px solid var(--black);
             outline-offset: 3px;
             border-radius: 4px;
         }
 
         ::selection {
-            background: var(--accent-gold);
-            color: #0a0a0a;
+            background: var(--black);
+            color: #fff;
         }
 
         /* ============================================================
@@ -154,7 +164,8 @@
         }
 
         .section {
-            padding: 96px 0;
+            padding: 100px 0;
+            position: relative;
         }
 
         @media (max-width: 768px) {
@@ -173,9 +184,9 @@
             display: inline-block;
             font-size: 0.7rem;
             font-weight: 700;
-            letter-spacing: 0.2em;
+            letter-spacing: 0.22em;
             text-transform: uppercase;
-            color: var(--accent-gold);
+            color: var(--black);
             margin-bottom: 12px;
             position: relative;
         }
@@ -183,10 +194,11 @@
         .section-label::after {
             content: '';
             display: block;
-            width: 36px;
-            height: 2px;
-            background: var(--accent-gold);
+            width: 40px;
+            height: 2.5px;
+            background: var(--black);
             margin-top: 8px;
+            border-radius: 2px;
         }
 
         .section-title {
@@ -221,11 +233,160 @@
         }
 
         /* ============================================================
+           DECORATIVE SHAPES
+           ============================================================ */
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            opacity: 0.4;
+        }
+
+        .shape-1 {
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.04), transparent 70%);
+            top: -100px;
+            right: -100px;
+            animation: shapeFloat 12s ease-in-out infinite;
+        }
+
+        .shape-2 {
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.03), transparent 70%);
+            bottom: -60px;
+            left: -60px;
+            animation: shapeFloat 10s ease-in-out infinite reverse;
+        }
+
+        .shape-3 {
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.03), transparent 70%);
+            top: 40%;
+            left: -80px;
+            animation: shapeFloat 14s ease-in-out infinite;
+        }
+
+        .shape-4 {
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(0, 0, 0, 0.02), transparent 70%);
+            bottom: 10%;
+            right: -100px;
+            animation: shapeFloat 11s ease-in-out infinite reverse;
+        }
+
+        @keyframes shapeFloat {
+
+            0%,
+            100% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            33% {
+                transform: translate(20px, -20px) scale(1.05);
+            }
+
+            66% {
+                transform: translate(-15px, 15px) scale(0.95);
+            }
+        }
+
+        .shape-line {
+            position: absolute;
+            width: 1px;
+            height: 120px;
+            background: linear-gradient(to bottom, transparent, var(--black), transparent);
+            opacity: 0.08;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .shape-line-1 {
+            top: 20%;
+            left: 8%;
+            transform: rotate(25deg);
+            animation: linePulse 6s ease-in-out infinite;
+        }
+
+        .shape-line-2 {
+            top: 50%;
+            right: 10%;
+            transform: rotate(-35deg);
+            animation: linePulse 8s ease-in-out infinite reverse;
+        }
+
+        .shape-line-3 {
+            bottom: 15%;
+            left: 15%;
+            transform: rotate(45deg);
+            animation: linePulse 7s ease-in-out infinite;
+        }
+
+        @keyframes linePulse {
+
+            0%,
+            100% {
+                opacity: 0.06;
+            }
+
+            50% {
+                opacity: 0.15;
+            }
+        }
+
+        .shape-dot {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--black);
+            opacity: 0.1;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .shape-dot-1 {
+            top: 15%;
+            left: 20%;
+            animation: dotPulse 5s ease-in-out infinite;
+        }
+
+        .shape-dot-2 {
+            top: 70%;
+            right: 25%;
+            animation: dotPulse 6s ease-in-out infinite 1s;
+        }
+
+        .shape-dot-3 {
+            bottom: 30%;
+            left: 45%;
+            animation: dotPulse 7s ease-in-out infinite 2s;
+        }
+
+        @keyframes dotPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.08;
+            }
+
+            50% {
+                transform: scale(1.8);
+                opacity: 0.2;
+            }
+        }
+
+        /* ============================================================
            REVEAL ANIMATIONS
            ============================================================ */
         .reveal {
             opacity: 0;
-            transform: translateY(28px);
+            transform: translateY(32px);
             transition: opacity var(--transition-reveal), transform var(--transition-reveal);
         }
 
@@ -236,7 +397,7 @@
 
         .reveal-scale {
             opacity: 0;
-            transform: scale(0.96);
+            transform: scale(0.94);
             transition: opacity var(--transition-reveal), transform var(--transition-reveal);
         }
 
@@ -247,9 +408,9 @@
 
         .stagger-item {
             opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 600ms cubic-bezier(0.22, 1, 0.36, 1),
-                transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+            transform: translateY(24px);
+            transition: opacity 700ms cubic-bezier(0.34, 1.56, 0.64, 1),
+                transform 700ms cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
         .stagger-item.revealed {
@@ -297,23 +458,23 @@
             align-items: center;
             gap: 12px;
             flex-shrink: 0;
-            transition: transform var(--transition-base);
+            transition: transform var(--transition-bounce);
         }
 
         .brand:hover {
-            transform: scale(1.02);
+            transform: scale(1.03);
         }
 
         .brand-logo {
-            width: 40px;
-            height: 40px;
+            width: 42px;
+            height: 42px;
             flex-shrink: 0;
             transition: width var(--transition-smooth), height var(--transition-smooth);
         }
 
         .header.scrolled .brand-logo {
-            width: 34px;
-            height: 34px;
+            width: 36px;
+            height: 36px;
         }
 
         .brand-text {
@@ -327,7 +488,7 @@
             font-size: 1.15rem;
             font-weight: 900;
             letter-spacing: 0.04em;
-            color: var(--text-primary);
+            color: var(--black);
             transition: font-size var(--transition-smooth);
         }
 
@@ -340,7 +501,7 @@
             font-weight: 600;
             letter-spacing: 0.2em;
             text-transform: uppercase;
-            color: var(--accent-gold);
+            color: var(--gray-500);
             transition: font-size var(--transition-smooth);
         }
 
@@ -362,18 +523,19 @@
             font-weight: 500;
             color: var(--text-secondary);
             border-radius: var(--radius-sm);
-            transition: color var(--transition-fast), background var(--transition-fast);
+            transition: color var(--transition-fast), background var(--transition-fast), transform var(--transition-fast);
             position: relative;
             letter-spacing: 0.02em;
         }
 
         .nav-desktop a:hover {
-            color: var(--accent-gold);
-            background: rgba(201, 168, 76, 0.06);
+            color: var(--black);
+            background: rgba(0, 0, 0, 0.04);
+            transform: translateY(-1px);
         }
 
         .nav-desktop a.active {
-            color: var(--accent-gold);
+            color: var(--black);
             font-weight: 600;
         }
 
@@ -383,9 +545,20 @@
             bottom: 2px;
             left: 14px;
             right: 14px;
-            height: 1.5px;
-            background: var(--accent-gold);
+            height: 2px;
+            background: var(--black);
             border-radius: 2px;
+            animation: navUnderline 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes navUnderline {
+            from {
+                transform: scaleX(0);
+            }
+
+            to {
+                transform: scaleX(1);
+            }
         }
 
         .header-actions {
@@ -393,10 +566,6 @@
             align-items: center;
             gap: 10px;
             flex-shrink: 0;
-        }
-
-        .theme-toggle {
-            display: none;
         }
 
         .btn {
@@ -408,7 +577,7 @@
             font-size: 0.82rem;
             font-weight: 600;
             border-radius: var(--radius-sm);
-            transition: all var(--transition-base);
+            transition: all var(--transition-bounce);
             white-space: nowrap;
             min-height: 44px;
             letter-spacing: 0.03em;
@@ -419,43 +588,46 @@
         .btn svg {
             width: 15px;
             height: 15px;
-            transition: transform var(--transition-base);
+            transition: transform var(--transition-bounce);
             flex-shrink: 0;
         }
 
         .btn:hover {
-            transform: translateY(-2px);
+            transform: translateY(-3px) scale(1.02);
         }
 
         .btn:active {
-            transform: scale(0.98);
+            transform: scale(0.97);
         }
 
-        .btn-gold {
-            background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold), var(--accent-gold-dark));
-            color: #0a0a0a;
-            box-shadow: 0 4px 18px rgba(201, 168, 76, 0.25);
+        .btn-black {
+            background: var(--black);
+            color: #fff;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
             font-weight: 700;
         }
 
-        .btn-gold:hover {
-            box-shadow: 0 8px 28px rgba(201, 168, 76, 0.4);
+        .btn-black:hover {
+            box-shadow: 0 10px 32px rgba(0, 0, 0, 0.35);
+            transform: translateY(-3px) scale(1.02);
+            background: var(--black-light);
         }
 
-        .btn-gold:hover svg {
-            transform: translateX(3px);
+        .btn-black:hover svg {
+            transform: translateX(4px);
         }
 
         .btn-outline {
             background: transparent;
-            color: var(--text-primary);
+            color: var(--black);
             border: 1.5px solid var(--border-color);
         }
 
         .btn-outline:hover {
-            border-color: var(--accent-gold);
-            color: var(--accent-gold);
-            background: rgba(201, 168, 76, 0.04);
+            border-color: var(--black);
+            color: var(--black);
+            background: rgba(0, 0, 0, 0.03);
+            transform: translateY(-3px) scale(1.02);
         }
 
         .btn-outline-light {
@@ -465,9 +637,10 @@
         }
 
         .btn-outline-light:hover {
-            border-color: var(--accent-gold);
-            color: var(--accent-gold);
-            background: rgba(201, 168, 76, 0.06);
+            border-color: #fff;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-3px) scale(1.02);
         }
 
         .btn-lg {
@@ -489,21 +662,22 @@
             justify-content: center;
             gap: 5px;
             border-radius: var(--radius-sm);
-            transition: background var(--transition-fast);
+            transition: background var(--transition-fast), transform var(--transition-bounce);
             flex-shrink: 0;
         }
 
         .hamburger:hover {
-            background: rgba(201, 168, 76, 0.08);
+            background: rgba(0, 0, 0, 0.05);
+            transform: scale(1.05);
         }
 
         .hamburger span {
             display: block;
             width: 22px;
             height: 1.5px;
-            background: var(--text-primary);
+            background: var(--black);
             border-radius: 2px;
-            transition: all var(--transition-smooth);
+            transition: all var(--transition-bounce);
             transform-origin: center;
         }
 
@@ -540,7 +714,7 @@
         .mobile-menu-backdrop {
             position: absolute;
             inset: 0;
-            background: rgba(0, 0, 0, 0.6);
+            background: rgba(0, 0, 0, 0.4);
             backdrop-filter: blur(4px);
             opacity: 0;
             transition: opacity var(--transition-smooth);
@@ -585,14 +759,15 @@
             font-weight: 500;
             color: var(--text-primary);
             border-radius: var(--radius-sm);
-            transition: all var(--transition-fast);
+            transition: all var(--transition-bounce);
             letter-spacing: 0.02em;
         }
 
         .mobile-nav a:hover,
         .mobile-nav a.active {
-            background: rgba(201, 168, 76, 0.08);
-            color: var(--accent-gold);
+            background: rgba(0, 0, 0, 0.05);
+            color: var(--black);
+            transform: translateX(6px);
         }
 
         .mobile-menu-footer {
@@ -630,7 +805,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.08;
+            opacity: 0.04;
             transform: scale(1.05);
             animation: heroBgMove 20s ease-in-out infinite alternate;
         }
@@ -649,9 +824,8 @@
             position: absolute;
             inset: 0;
             background:
-                radial-gradient(ellipse at 25% 50%, rgba(201, 168, 76, 0.06) 0%, transparent 60%),
-                radial-gradient(ellipse at 75% 20%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
-                linear-gradient(135deg, #0a0a0a 0%, #111111 50%, #0a0a0a 100%);
+                radial-gradient(ellipse at 25% 50%, rgba(255, 255, 255, 0.04) 0%, transparent 60%),
+                linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
         }
 
         .hero-grid-overlay {
@@ -690,18 +864,18 @@
             font-weight: 700;
             letter-spacing: 0.25em;
             text-transform: uppercase;
-            color: var(--accent-gold);
+            color: rgba(255, 255, 255, 0.7);
             margin-bottom: 20px;
             opacity: 0;
             transform: translateY(20px);
-            animation: heroFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
+            animation: heroFadeUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.2s forwards;
         }
 
         .hero-label::before {
             content: '';
             width: 32px;
             height: 1.5px;
-            background: var(--accent-gold);
+            background: rgba(255, 255, 255, 0.5);
         }
 
         .hero-title {
@@ -714,11 +888,11 @@
             letter-spacing: -0.03em;
             opacity: 0;
             transform: translateY(40px);
-            animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.35s forwards;
+            animation: heroFadeUp 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.35s forwards;
         }
 
         .hero-title .accent {
-            color: var(--accent-gold);
+            color: rgba(255, 255, 255, 0.85);
             position: relative;
             display: inline-block;
         }
@@ -730,9 +904,9 @@
             left: 0;
             right: 0;
             height: 3px;
-            background: linear-gradient(90deg, var(--accent-gold), transparent);
+            background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), transparent);
             border-radius: 2px;
-            opacity: 0.5;
+            opacity: 0.4;
         }
 
         .hero-subtitle {
@@ -743,7 +917,7 @@
             max-width: 560px;
             opacity: 0;
             transform: translateY(30px);
-            animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.5s forwards;
+            animation: heroFadeUp 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.5s forwards;
         }
 
         .hero-tags {
@@ -753,7 +927,7 @@
             margin-bottom: 32px;
             opacity: 0;
             transform: translateY(30px);
-            animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.6s forwards;
+            animation: heroFadeUp 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.6s forwards;
         }
 
         .hero-tag {
@@ -764,18 +938,25 @@
             font-weight: 600;
             letter-spacing: 0.1em;
             text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.75);
             padding: 6px 14px;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 100px;
             backdrop-filter: blur(4px);
+            transition: all var(--transition-bounce);
+        }
+
+        .hero-tag:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
         }
 
         .hero-tag svg {
             width: 11px;
             height: 11px;
-            color: var(--accent-gold);
+            color: rgba(255, 255, 255, 0.6);
         }
 
         .hero-buttons {
@@ -784,7 +965,7 @@
             gap: 12px;
             opacity: 0;
             transform: translateY(30px);
-            animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.7s forwards;
+            animation: heroFadeUp 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.7s forwards;
         }
 
         .hero-badge {
@@ -793,56 +974,58 @@
             justify-content: center;
             opacity: 0;
             transform: scale(0.8) rotate(-8deg);
-            animation: heroBadgeIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.85s forwards;
+            animation: heroBadgeIn 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.85s forwards;
         }
 
         .badge-circle {
-            width: 400px;
-            height: 400px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
-            background: linear-gradient(145deg, #161616, #0a0a0a);
-            border: 2px solid var(--accent-gold);
+            background: linear-gradient(145deg, #1a1a1a, #0a0a0a);
+            border: 2px solid rgba(255, 255, 255, 0.15);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             position: relative;
             box-shadow:
-                0 0 0 8px rgba(201, 168, 76, 0.06),
-                0 0 0 16px rgba(201, 168, 76, 0.02),
-                0 20px 60px rgba(0, 0, 0, 0.6);
+                0 0 0 10px rgba(255, 255, 255, 0.03),
+                0 0 0 20px rgba(255, 255, 255, 0.01),
+                0 20px 60px rgba(0, 0, 0, 0.5);
             animation: badgePulse 3s ease-in-out infinite;
+            transition: transform var(--transition-bounce);
+        }
+
+        .badge-circle:hover {
+            transform: scale(1.05);
         }
 
         @keyframes badgePulse {
 
             0%,
             100% {
-                box-shadow: 0 0 0 8px rgba(201, 168, 76, 0.06), 0 0 0 16px rgba(201, 168, 76, 0.02), 0 20px 60px rgba(0, 0, 0, 0.6);
+                box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.03), 0 0 0 20px rgba(255, 255, 255, 0.01), 0 20px 60px rgba(0, 0, 0, 0.5);
             }
 
             50% {
-                box-shadow: 0 0 0 12px rgba(201, 168, 76, 0.12), 0 0 0 24px rgba(201, 168, 76, 0.04), 0 20px 60px rgba(0, 0, 0, 0.6);
+                box-shadow: 0 0 0 14px rgba(255, 255, 255, 0.06), 0 0 0 28px rgba(255, 255, 255, 0.02), 0 20px 60px rgba(0, 0, 0, 0.5);
             }
         }
 
         .badge-number {
             font-family: 'Montserrat', sans-serif;
-            font-size: 8rem;
+            font-size: 3.5rem;
             font-weight: 900;
             line-height: 1;
-            background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold), var(--accent-gold-dark));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #fff;
         }
 
         .badge-text {
-            font-size: 1.5rem;
+            font-size: 0.65rem;
             font-weight: 700;
             letter-spacing: 0.25em;
             text-transform: uppercase;
-            color: #fff;
+            color: rgba(255, 255, 255, 0.9);
             margin-top: 4px;
         }
 
@@ -851,7 +1034,7 @@
             font-weight: 500;
             letter-spacing: 0.2em;
             text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.5);
+            color: rgba(255, 255, 255, 0.4);
             margin-top: 2px;
         }
 
@@ -874,6 +1057,8 @@
            ============================================================ */
         .highlights {
             background: var(--bg-primary);
+            position: relative;
+            overflow: hidden;
         }
 
         .highlights-grid {
@@ -887,7 +1072,7 @@
             border: 1px solid var(--border-color);
             border-radius: var(--radius-lg);
             padding: 32px 24px;
-            transition: all var(--transition-smooth);
+            transition: all var(--transition-bounce);
             position: relative;
             overflow: hidden;
         }
@@ -898,8 +1083,8 @@
             top: 0;
             left: 0;
             right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--accent-gold), transparent);
+            height: 3px;
+            background: var(--black);
             transform: scaleX(0);
             transform-origin: left;
             transition: transform var(--transition-smooth);
@@ -910,29 +1095,30 @@
         }
 
         .highlight-card:hover {
-            transform: translateY(-8px);
+            transform: translateY(-10px) scale(1.02);
             box-shadow: var(--shadow-lg);
-            border-color: rgba(201, 168, 76, 0.2);
+            border-color: rgba(0, 0, 0, 0.1);
             background: var(--bg-card-hover);
         }
 
         .highlight-icon {
-            width: 52px;
-            height: 52px;
+            width: 54px;
+            height: 54px;
             border-radius: var(--radius-md);
-            background: rgba(201, 168, 76, 0.08);
+            background: rgba(0, 0, 0, 0.04);
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 20px;
-            color: var(--accent-gold);
-            transition: all var(--transition-smooth);
+            color: var(--black);
+            transition: all var(--transition-bounce);
         }
 
         .highlight-card:hover .highlight-icon {
-            transform: scale(1.1) rotate(-5deg);
-            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
-            color: #0a0a0a;
+            transform: scale(1.15) rotate(-6deg);
+            background: var(--black);
+            color: #fff;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
         }
 
         .highlight-icon svg {
@@ -961,6 +1147,8 @@
            ============================================================ */
         .about {
             background: var(--bg-secondary);
+            position: relative;
+            overflow: hidden;
         }
 
         .about-grid {
@@ -975,11 +1163,17 @@
             border-radius: var(--radius-xl);
             overflow: hidden;
             aspect-ratio: 4 / 3;
-            background: linear-gradient(135deg, #111111, #1a1a1a);
+            background: var(--black);
             display: flex;
             align-items: center;
             justify-content: center;
             border: 1px solid var(--border-color);
+            transition: transform var(--transition-bounce), box-shadow var(--transition-bounce);
+        }
+
+        .about-visual:hover {
+            transform: scale(1.02) translateY(-4px);
+            box-shadow: var(--shadow-xl);
         }
 
         .about-visual img {
@@ -987,17 +1181,17 @@
             height: 100%;
             object-fit: cover;
             transition: transform var(--transition-slow);
-            opacity: 0.3;
+            opacity: 0.15;
         }
 
         .about-visual:hover img {
-            transform: scale(1.03);
+            transform: scale(1.05);
         }
 
         .about-visual-overlay {
             position: absolute;
             inset: 0;
-            background: linear-gradient(135deg, rgba(10, 10, 10, 0.7), rgba(201, 168, 76, 0.08));
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.85), rgba(26, 26, 26, 0.7));
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1014,10 +1208,7 @@
             font-size: clamp(3rem, 6vw, 5rem);
             font-weight: 900;
             line-height: 1;
-            background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: #fff;
         }
 
         .about-visual-content .big-label {
@@ -1025,7 +1216,7 @@
             font-weight: 700;
             letter-spacing: 0.3em;
             text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.85);
+            color: rgba(255, 255, 255, 0.75);
             margin-top: 8px;
         }
 
@@ -1051,13 +1242,18 @@
 
         .about-stat {
             text-align: center;
+            transition: transform var(--transition-bounce);
+        }
+
+        .about-stat:hover {
+            transform: translateY(-4px);
         }
 
         .about-stat-value {
             font-family: 'Montserrat', sans-serif;
             font-size: 1.4rem;
             font-weight: 800;
-            color: var(--accent-gold);
+            color: var(--black);
             line-height: 1.2;
         }
 
@@ -1075,11 +1271,11 @@
            ============================================================ */
         .years-section {
             position: relative;
-            background: linear-gradient(135deg, #0a0a0a 0%, #111111 50%, #0a0a0a 100%);
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0a0a0a 100%);
             overflow: hidden;
-            padding: 96px 0;
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
+            padding: 100px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         .years-section::before {
@@ -1105,11 +1301,21 @@
             font-size: clamp(5rem, 15vw, 10rem);
             font-weight: 900;
             line-height: 0.9;
-            background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold), var(--accent-gold-dark));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            filter: drop-shadow(0 0 40px rgba(201, 168, 76, 0.2));
+            color: #fff;
+            filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.1));
+            animation: numberGlow 4s ease-in-out infinite;
+        }
+
+        @keyframes numberGlow {
+
+            0%,
+            100% {
+                filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.08));
+            }
+
+            50% {
+                filter: drop-shadow(0 0 60px rgba(255, 255, 255, 0.18));
+            }
         }
 
         .years-label {
@@ -1135,9 +1341,22 @@
         .years-divider {
             width: 50px;
             height: 2px;
-            background: var(--accent-gold);
+            background: rgba(255, 255, 255, 0.5);
             margin: 32px auto 0;
             border-radius: 2px;
+            animation: dividerExpand 1.5s ease-in-out infinite;
+        }
+
+        @keyframes dividerExpand {
+
+            0%,
+            100% {
+                width: 50px;
+            }
+
+            50% {
+                width: 80px;
+            }
         }
 
         /* ============================================================
@@ -1145,6 +1364,8 @@
            ============================================================ */
         .products {
             background: var(--bg-primary);
+            position: relative;
+            overflow: hidden;
         }
 
         .products-grid {
@@ -1159,7 +1380,7 @@
             border: 1px solid var(--border-color);
             border-radius: var(--radius-lg);
             padding: 28px 22px;
-            transition: all var(--transition-smooth);
+            transition: all var(--transition-bounce);
             display: flex;
             flex-direction: column;
             position: relative;
@@ -1172,8 +1393,8 @@
             bottom: 0;
             left: 0;
             right: 0;
-            height: 2px;
-            background: linear-gradient(90deg, var(--accent-gold), transparent);
+            height: 3px;
+            background: var(--black);
             transform: scaleX(0);
             transform-origin: left;
             transition: transform var(--transition-smooth);
@@ -1184,29 +1405,30 @@
         }
 
         .product-card:hover {
-            transform: translateY(-8px);
+            transform: translateY(-10px) scale(1.02);
             box-shadow: var(--shadow-lg);
-            border-color: rgba(201, 168, 76, 0.2);
+            border-color: rgba(0, 0, 0, 0.1);
             background: var(--bg-card-hover);
         }
 
         .product-icon {
-            width: 46px;
-            height: 46px;
+            width: 48px;
+            height: 48px;
             border-radius: var(--radius-sm);
-            background: rgba(201, 168, 76, 0.06);
+            background: rgba(0, 0, 0, 0.04);
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 16px;
-            color: var(--accent-gold);
-            transition: all var(--transition-smooth);
+            color: var(--black);
+            transition: all var(--transition-bounce);
         }
 
         .product-card:hover .product-icon {
-            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
-            color: #0a0a0a;
-            transform: scale(1.08);
+            background: var(--black);
+            color: #fff;
+            transform: scale(1.12) rotate(-4deg);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
         .product-icon svg {
@@ -1237,8 +1459,8 @@
             gap: 6px;
             font-size: 0.75rem;
             font-weight: 600;
-            color: var(--accent-gold);
-            transition: all var(--transition-base);
+            color: var(--black);
+            transition: all var(--transition-bounce);
             align-self: flex-start;
             padding: 6px 0;
             min-height: 36px;
@@ -1246,18 +1468,18 @@
         }
 
         .product-enquire:hover {
-            gap: 10px;
-            color: var(--accent-gold-light);
+            gap: 12px;
+            color: var(--gray-600);
         }
 
         .product-enquire svg {
             width: 13px;
             height: 13px;
-            transition: transform var(--transition-base);
+            transition: transform var(--transition-bounce);
         }
 
         .product-enquire:hover svg {
-            transform: translateX(3px);
+            transform: translateX(4px);
         }
 
         /* ============================================================
@@ -1265,6 +1487,8 @@
            ============================================================ */
         .cutting {
             background: var(--bg-secondary);
+            position: relative;
+            overflow: hidden;
         }
 
         .cutting-header {
@@ -1286,8 +1510,8 @@
             top: 36px;
             left: 12%;
             right: 12%;
-            height: 1px;
-            background: linear-gradient(90deg, var(--border-color), var(--accent-gold), var(--border-color));
+            height: 1.5px;
+            background: linear-gradient(90deg, var(--border-color), var(--black), var(--border-color));
             z-index: 0;
         }
 
@@ -1311,22 +1535,22 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 1.2rem;
             font-weight: 800;
-            color: var(--accent-gold);
-            transition: all var(--transition-smooth);
+            color: var(--black);
+            transition: all var(--transition-bounce);
             position: relative;
         }
 
         .timeline-item.revealed .timeline-number {
-            border-color: var(--accent-gold);
-            background: linear-gradient(135deg, var(--bg-card), rgba(201, 168, 76, 0.04));
+            border-color: var(--black);
+            background: linear-gradient(135deg, var(--bg-card), rgba(0, 0, 0, 0.02));
         }
 
         .timeline-item:hover .timeline-number {
-            transform: scale(1.1);
-            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
-            color: #0a0a0a;
-            border-color: var(--accent-gold);
-            box-shadow: 0 8px 28px rgba(201, 168, 76, 0.3);
+            transform: scale(1.15) rotate(5deg);
+            background: var(--black);
+            color: #fff;
+            border-color: var(--black);
+            box-shadow: 0 10px 32px rgba(0, 0, 0, 0.25);
         }
 
         .timeline-title {
@@ -1350,6 +1574,8 @@
            ============================================================ */
         .why {
             background: var(--bg-primary);
+            position: relative;
+            overflow: hidden;
         }
 
         .why-grid {
@@ -1364,34 +1590,35 @@
             border: 1px solid var(--border-color);
             border-radius: var(--radius-lg);
             padding: 32px 24px;
-            transition: all var(--transition-smooth);
+            transition: all var(--transition-bounce);
             text-align: center;
         }
 
         .why-card:hover {
-            transform: translateY(-8px);
+            transform: translateY(-10px) scale(1.02);
             box-shadow: var(--shadow-lg);
-            border-color: rgba(201, 168, 76, 0.25);
+            border-color: rgba(0, 0, 0, 0.1);
             background: var(--bg-card-hover);
         }
 
         .why-icon {
-            width: 60px;
-            height: 60px;
+            width: 62px;
+            height: 62px;
             border-radius: 50%;
-            background: rgba(201, 168, 76, 0.06);
+            background: rgba(0, 0, 0, 0.04);
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 20px;
-            color: var(--accent-gold);
-            transition: all var(--transition-smooth);
+            color: var(--black);
+            transition: all var(--transition-bounce);
         }
 
         .why-card:hover .why-icon {
-            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
-            color: #0a0a0a;
-            transform: scale(1.1) rotate(5deg);
+            background: var(--black);
+            color: #fff;
+            transform: scale(1.15) rotate(8deg);
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
         }
 
         .why-icon svg {
@@ -1419,19 +1646,19 @@
            QUALITY BANNER
            ============================================================ */
         .quality-banner {
-            background: linear-gradient(135deg, #0a0a0a, #111111);
-            padding: 64px 0;
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+            padding: 72px 0;
             position: relative;
             overflow: hidden;
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         .quality-banner::before {
             content: '';
             position: absolute;
             inset: 0;
-            background: radial-gradient(ellipse at 30% 50%, rgba(201, 168, 76, 0.05), transparent 60%);
+            background: radial-gradient(ellipse at 30% 50%, rgba(255, 255, 255, 0.03), transparent 60%);
         }
 
         .quality-grid {
@@ -1447,19 +1674,31 @@
             align-items: center;
             gap: 16px;
             justify-content: center;
+            transition: transform var(--transition-bounce);
+        }
+
+        .quality-item:hover {
+            transform: translateY(-4px) scale(1.03);
         }
 
         .quality-icon {
-            width: 50px;
-            height: 50px;
+            width: 52px;
+            height: 52px;
             border-radius: var(--radius-md);
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--accent-gold);
+            color: #fff;
             flex-shrink: 0;
+            transition: all var(--transition-bounce);
+        }
+
+        .quality-item:hover .quality-icon {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1) rotate(-5deg);
         }
 
         .quality-icon svg {
@@ -1481,6 +1720,8 @@
            ============================================================ */
         .location {
             background: var(--bg-secondary);
+            position: relative;
+            overflow: hidden;
         }
 
         .location-grid {
@@ -1499,24 +1740,24 @@
             position: relative;
             min-height: 300px;
             max-height: 330px;
-            transition: all var(--transition-smooth);
+            transition: all var(--transition-bounce);
             box-shadow: var(--shadow-md);
         }
 
         .map-card:hover {
-            box-shadow: var(--shadow-lg);
-            transform: translateY(-4px);
-            border-color: rgba(201, 168, 76, 0.2);
+            box-shadow: var(--shadow-xl);
+            transform: translateY(-6px) scale(1.01);
+            border-color: rgba(0, 0, 0, 0.1);
         }
 
         .map-visual {
             position: absolute;
             inset: 0;
             background:
-                linear-gradient(rgba(10, 10, 10, 0.9), rgba(17, 17, 17, 0.9)),
+                linear-gradient(rgba(10, 10, 10, 0.92), rgba(26, 26, 26, 0.92)),
                 repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(255, 255, 255, 0.02) 40px, rgba(255, 255, 255, 0.02) 41px),
                 repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(255, 255, 255, 0.02) 40px, rgba(255, 255, 255, 0.02) 41px),
-                linear-gradient(135deg, #111111, #1a1a1a);
+                linear-gradient(135deg, #0a0a0a, #1a1a1a);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -1526,15 +1767,15 @@
         }
 
         .map-pin-icon {
-            width: 52px;
-            height: 52px;
+            width: 54px;
+            height: 54px;
             border-radius: 50%;
-            background: rgba(201, 168, 76, 0.1);
-            border: 1.5px solid var(--accent-gold);
+            background: rgba(255, 255, 255, 0.08);
+            border: 1.5px solid rgba(255, 255, 255, 0.3);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--accent-gold);
+            color: #fff;
             margin-bottom: 16px;
             animation: mapPinPulse 2s ease-in-out infinite;
         }
@@ -1544,12 +1785,12 @@
             0%,
             100% {
                 transform: translateY(0);
-                box-shadow: 0 0 0 0 rgba(201, 168, 76, 0.2);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.15);
             }
 
             50% {
                 transform: translateY(-6px);
-                box-shadow: 0 0 0 14px rgba(201, 168, 76, 0);
+                box-shadow: 0 0 0 16px rgba(255, 255, 255, 0);
             }
         }
 
@@ -1580,15 +1821,15 @@
             font-size: 0.78rem;
             font-weight: 600;
             color: #0a0a0a;
-            background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold));
+            background: #fff;
             border-radius: var(--radius-sm);
-            transition: all var(--transition-base);
+            transition: all var(--transition-bounce);
             min-height: 44px;
         }
 
         .map-open-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(201, 168, 76, 0.35);
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 10px 28px rgba(255, 255, 255, 0.15);
         }
 
         .map-open-btn svg {
@@ -1607,24 +1848,30 @@
             display: flex;
             gap: 16px;
             align-items: flex-start;
+            transition: transform var(--transition-bounce);
+        }
+
+        .location-item:hover {
+            transform: translateX(6px);
         }
 
         .location-item-icon {
             width: 44px;
             height: 44px;
             border-radius: var(--radius-sm);
-            background: rgba(201, 168, 76, 0.06);
+            background: rgba(0, 0, 0, 0.04);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--accent-gold);
+            color: var(--black);
             flex-shrink: 0;
-            transition: all var(--transition-base);
+            transition: all var(--transition-bounce);
         }
 
         .location-item:hover .location-item-icon {
-            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
-            color: #0a0a0a;
+            background: var(--black);
+            color: #fff;
+            transform: scale(1.1) rotate(-5deg);
         }
 
         .location-item-icon svg {
@@ -1653,7 +1900,7 @@
         }
 
         .location-item-value a:hover {
-            color: var(--accent-gold);
+            color: var(--gray-500);
         }
 
         /* ============================================================
@@ -1661,6 +1908,8 @@
            ============================================================ */
         .contact {
             background: var(--bg-primary);
+            position: relative;
+            overflow: hidden;
         }
 
         .contact-grid {
@@ -1678,12 +1927,13 @@
             display: flex;
             flex-direction: column;
             gap: 28px;
-            transition: all var(--transition-smooth);
+            transition: all var(--transition-bounce);
         }
 
         .contact-card:hover {
-            box-shadow: var(--shadow-lg);
-            border-color: rgba(201, 168, 76, 0.15);
+            box-shadow: var(--shadow-xl);
+            transform: translateY(-4px);
+            border-color: rgba(0, 0, 0, 0.08);
         }
 
         .contact-person {
@@ -1696,15 +1946,20 @@
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
+            background: var(--black);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #0a0a0a;
+            color: #fff;
             font-family: 'Montserrat', sans-serif;
             font-size: 1.3rem;
             font-weight: 800;
             flex-shrink: 0;
+            transition: transform var(--transition-bounce);
+        }
+
+        .contact-card:hover .contact-avatar {
+            transform: scale(1.08) rotate(-5deg);
         }
 
         .contact-person-name {
@@ -1734,33 +1989,35 @@
             background: var(--bg-secondary);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
-            transition: all var(--transition-base);
+            transition: all var(--transition-bounce);
             text-align: left;
             min-height: 56px;
         }
 
         .contact-btn:hover {
-            transform: translateX(4px);
-            border-color: var(--accent-gold);
+            transform: translateX(8px) scale(1.02);
+            border-color: var(--black);
             box-shadow: var(--shadow-md);
+            background: var(--bg-card);
         }
 
         .contact-btn-icon {
             width: 40px;
             height: 40px;
             border-radius: var(--radius-sm);
-            background: rgba(201, 168, 76, 0.06);
+            background: rgba(0, 0, 0, 0.04);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--accent-gold);
+            color: var(--black);
             flex-shrink: 0;
-            transition: all var(--transition-base);
+            transition: all var(--transition-bounce);
         }
 
         .contact-btn:hover .contact-btn-icon {
-            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
-            color: #0a0a0a;
+            background: var(--black);
+            color: #fff;
+            transform: scale(1.1) rotate(-5deg);
         }
 
         .contact-btn-icon svg {
@@ -1787,6 +2044,8 @@
            ============================================================ */
         .quote {
             background: var(--bg-secondary);
+            position: relative;
+            overflow: hidden;
         }
 
         .quote-grid {
@@ -1821,12 +2080,17 @@
             gap: 12px;
             font-size: 0.85rem;
             color: var(--text-secondary);
+            transition: transform var(--transition-bounce);
+        }
+
+        .quote-feature:hover {
+            transform: translateX(6px);
         }
 
         .quote-feature svg {
             width: 18px;
             height: 18px;
-            color: var(--accent-gold);
+            color: var(--black);
             flex-shrink: 0;
         }
 
@@ -1836,6 +2100,11 @@
             border-radius: var(--radius-lg);
             padding: 40px 32px;
             box-shadow: var(--shadow-md);
+            transition: box-shadow var(--transition-bounce);
+        }
+
+        .quote-form:hover {
+            box-shadow: var(--shadow-lg);
         }
 
         .form-row {
@@ -1858,7 +2127,7 @@
         }
 
         .form-label .required {
-            color: var(--accent-gold);
+            color: var(--black);
             margin-left: 2px;
         }
 
@@ -1871,7 +2140,7 @@
             border-radius: var(--radius-sm);
             color: var(--text-primary);
             font-size: 0.88rem;
-            transition: all var(--transition-base);
+            transition: all var(--transition-bounce);
             min-height: 48px;
         }
 
@@ -1884,14 +2153,15 @@
         .form-input:focus,
         .form-textarea:focus {
             outline: none;
-            border-color: var(--accent-gold);
-            box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.1);
+            border-color: var(--black);
+            box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.06);
+            transform: translateY(-2px);
         }
 
         .form-input.error,
         .form-textarea.error {
-            border-color: #e53e3e;
-            box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+            border-color: #dc2626;
+            box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.08);
         }
 
         .form-textarea {
@@ -1903,14 +2173,14 @@
         .form-error {
             display: none;
             font-size: 0.72rem;
-            color: #e53e3e;
+            color: #dc2626;
             margin-top: 5px;
             font-weight: 500;
         }
 
         .form-error.visible {
             display: block;
-            animation: shakeIn 0.3s ease;
+            animation: shakeIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
 
         @keyframes shakeIn {
@@ -1920,18 +2190,55 @@
                 transform: translateX(0);
             }
 
-            25% {
-                transform: translateX(-4px);
+            20% {
+                transform: translateX(-5px);
             }
 
-            75% {
-                transform: translateX(4px);
+            40% {
+                transform: translateX(5px);
+            }
+
+            60% {
+                transform: translateX(-3px);
+            }
+
+            80% {
+                transform: translateX(3px);
             }
         }
 
         .form-submit {
             width: 100%;
             margin-top: 8px;
+        }
+
+        .form-submit.loading {
+            pointer-events: none;
+            opacity: 0.7;
+        }
+
+        .form-submit .spinner {
+            display: none;
+            width: 16px;
+            height: 16px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: spin 0.6s linear infinite;
+        }
+
+        .form-submit.loading .spinner {
+            display: block;
+        }
+
+        .form-submit.loading .submit-icon {
+            display: none;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .form-note {
@@ -1949,13 +2256,13 @@
             position: fixed;
             bottom: 100px;
             left: 50%;
-            transform: translateX(-50%) translateY(20px);
-            background: linear-gradient(135deg, #111111, #1a1a1a);
+            transform: translateX(-50%) translateY(30px) scale(0.9);
+            background: var(--black);
             color: #fff;
             padding: 16px 28px;
             border-radius: var(--radius-md);
             box-shadow: var(--shadow-xl);
-            border: 1px solid rgba(201, 168, 76, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
             align-items: center;
             gap: 12px;
@@ -1963,7 +2270,7 @@
             font-weight: 500;
             opacity: 0;
             visibility: hidden;
-            transition: all var(--transition-smooth);
+            transition: all var(--transition-bounce);
             z-index: 2000;
             max-width: calc(100vw - 32px);
         }
@@ -1971,14 +2278,18 @@
         .toast.show {
             opacity: 1;
             visibility: visible;
-            transform: translateX(-50%) translateY(0);
+            transform: translateX(-50%) translateY(0) scale(1);
         }
 
         .toast svg {
             width: 18px;
             height: 18px;
-            color: var(--accent-gold);
+            color: #fff;
             flex-shrink: 0;
+        }
+
+        .toast.error {
+            background: #dc2626;
         }
 
         @media (max-width: 768px) {
@@ -1995,7 +2306,7 @@
             color: #fff;
             padding: 72px 0 32px;
             position: relative;
-            border-top: 1px solid var(--border-color);
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
         }
 
         .footer-grid {
@@ -2026,7 +2337,7 @@
 
         .footer-desc {
             font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(255, 255, 255, 0.55);
             line-height: 1.7;
             margin-bottom: 16px;
             max-width: 320px;
@@ -2037,7 +2348,7 @@
             font-weight: 700;
             letter-spacing: 0.25em;
             text-transform: uppercase;
-            color: var(--accent-gold);
+            color: rgba(255, 255, 255, 0.5);
         }
 
         .footer-title {
@@ -2059,14 +2370,14 @@
 
         .footer-links a {
             font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.55);
-            transition: all var(--transition-fast);
+            color: rgba(255, 255, 255, 0.5);
+            transition: all var(--transition-bounce);
             display: inline-block;
         }
 
         .footer-links a:hover {
-            color: var(--accent-gold);
-            transform: translateX(4px);
+            color: #fff;
+            transform: translateX(6px);
         }
 
         .footer-contact-item {
@@ -2074,12 +2385,17 @@
             gap: 12px;
             margin-bottom: 16px;
             align-items: flex-start;
+            transition: transform var(--transition-bounce);
+        }
+
+        .footer-contact-item:hover {
+            transform: translateX(4px);
         }
 
         .footer-contact-item svg {
             width: 16px;
             height: 16px;
-            color: var(--accent-gold);
+            color: rgba(255, 255, 255, 0.6);
             flex-shrink: 0;
             margin-top: 2px;
         }
@@ -2087,17 +2403,17 @@
         .footer-contact-item span,
         .footer-contact-item a {
             font-size: 0.85rem;
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(255, 255, 255, 0.55);
             line-height: 1.5;
             transition: color var(--transition-fast);
         }
 
         .footer-contact-item a:hover {
-            color: var(--accent-gold);
+            color: #fff;
         }
 
         .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
             padding-top: 24px;
             display: flex;
             align-items: center;
@@ -2108,7 +2424,7 @@
 
         .footer-copy {
             font-size: 0.75rem;
-            color: rgba(255, 255, 255, 0.4);
+            color: rgba(255, 255, 255, 0.35);
         }
 
         .footer-maps-link {
@@ -2117,12 +2433,14 @@
             gap: 6px;
             font-size: 0.75rem;
             font-weight: 600;
-            color: var(--accent-gold);
-            transition: all var(--transition-base);
+            color: rgba(255, 255, 255, 0.6);
+            transition: all var(--transition-bounce);
         }
 
         .footer-maps-link:hover {
-            gap: 10px;
+            gap: 12px;
+            color: #fff;
+            transform: translateX(4px);
         }
 
         .footer-maps-link svg {
@@ -2137,31 +2455,32 @@
             position: fixed;
             bottom: 32px;
             right: 32px;
-            width: 46px;
-            height: 46px;
+            width: 48px;
+            height: 48px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
-            color: #0a0a0a;
+            background: var(--black);
+            color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
             box-shadow: var(--shadow-lg);
             opacity: 0;
             visibility: hidden;
-            transform: translateY(16px);
-            transition: all var(--transition-smooth);
+            transform: translateY(20px) scale(0.9);
+            transition: all var(--transition-bounce);
             z-index: 900;
         }
 
         .back-to-top.visible {
             opacity: 1;
             visibility: visible;
-            transform: translateY(0);
+            transform: translateY(0) scale(1);
         }
 
         .back-to-top:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 32px rgba(201, 168, 76, 0.4);
+            transform: translateY(-6px) scale(1.1);
+            box-shadow: 0 14px 40px rgba(0, 0, 0, 0.3);
+            background: var(--black-light);
         }
 
         .back-to-top svg {
@@ -2173,8 +2492,8 @@
             .back-to-top {
                 bottom: calc(80px + env(safe-area-inset-bottom, 0px));
                 right: 16px;
-                width: 42px;
-                height: 42px;
+                width: 44px;
+                height: 44px;
             }
         }
 
@@ -2194,7 +2513,7 @@
             -webkit-backdrop-filter: blur(20px) saturate(180%);
             border-top: 1px solid var(--border-color);
             z-index: 950;
-            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.06);
         }
 
         .mobile-bar-inner {
@@ -2210,15 +2529,16 @@
             justify-content: center;
             gap: 3px;
             color: var(--text-secondary);
-            transition: all var(--transition-fast);
+            transition: all var(--transition-bounce);
             min-height: 44px;
             padding: 6px;
         }
 
         .mobile-bar-btn:hover,
         .mobile-bar-btn:active {
-            color: var(--accent-gold);
-            background: rgba(201, 168, 76, 0.05);
+            color: var(--black);
+            background: rgba(0, 0, 0, 0.04);
+            transform: scale(1.08);
         }
 
         .mobile-bar-btn svg {
@@ -2320,8 +2640,8 @@
             }
 
             .brand-logo {
-                width: 34px;
-                height: 34px;
+                width: 36px;
+                height: 36px;
             }
 
             .brand-name {
@@ -2374,8 +2694,8 @@
             }
 
             .badge-circle {
-                width: 160px;
-                height: 160px;
+                width: 170px;
+                height: 170px;
             }
 
             .badge-number {
@@ -2530,8 +2850,8 @@
             }
 
             .badge-circle {
-                width: 140px;
-                height: 140px;
+                width: 150px;
+                height: 150px;
             }
 
             .badge-number {
@@ -2622,6 +2942,20 @@
             .map-pin-icon {
                 animation: none !important;
             }
+
+            .shape,
+            .shape-line,
+            .shape-dot {
+                animation: none !important;
+            }
+
+            .years-number {
+                animation: none !important;
+            }
+
+            .years-divider {
+                animation: none !important;
+            }
         }
     </style>
 </head>
@@ -2636,9 +2970,9 @@
             <a href="#home" class="brand" aria-label="Sumit Steel - Home">
                 <svg class="brand-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
                     aria-hidden="true">
-                    <path d="M20 25 L50 10 L80 25 L50 40 Z" fill="#c9a84c" />
-                    <path d="M20 45 L50 30 L80 45 L50 60 Z" fill="#e0c060" />
-                    <path d="M20 65 L50 50 L80 65 L50 80 Z" fill="#c9a84c" />
+                    <path d="M20 25 L50 10 L80 25 L50 40 Z" fill="#0a0a0a" />
+                    <path d="M20 45 L50 30 L80 45 L50 60 Z" fill="#404040" />
+                    <path d="M20 65 L50 50 L80 65 L50 80 Z" fill="#0a0a0a" />
                 </svg>
                 <div class="brand-text">
                     <span class="brand-name">SUMIT STEEL</span>
@@ -2659,7 +2993,7 @@
             </nav>
 
             <div class="header-actions">
-                <a href="#quote" class="btn btn-gold header-quote-btn">
+                <a href="#quote" class="btn btn-black header-quote-btn">
                     Request Quote
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" aria-hidden="true">
@@ -2696,7 +3030,7 @@
                 </ul>
             </nav>
             <div class="mobile-menu-footer">
-                <a href="#quote" class="btn btn-gold mobile-nav-link" style="width:100%;">
+                <a href="#quote" class="btn btn-black mobile-nav-link" style="width:100%;">
                     Request Quote
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" aria-hidden="true">
@@ -2720,6 +3054,16 @@
                     alt="" aria-hidden="true" loading="eager" />
                 <div class="hero-overlay"></div>
                 <div class="hero-grid-overlay"></div>
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+                <div class="shape-line shape-line-1"></div>
+                <div class="shape-line shape-line-2"></div>
+                <div class="shape-line shape-line-3"></div>
+                <div class="shape-dot shape-dot-1"></div>
+                <div class="shape-dot shape-dot-2"></div>
+                <div class="shape-dot shape-dot-3"></div>
             </div>
 
             <div class="container">
@@ -2758,7 +3102,7 @@
                             </span>
                         </div>
                         <div class="hero-buttons">
-                            <a href="#quote" class="btn btn-gold btn-lg">
+                            <a href="#quote" class="btn btn-black btn-lg">
                                 Request a Quote
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -2796,6 +3140,9 @@
              BUSINESS HIGHLIGHTS
              ============================================================ -->
         <section class="section highlights" id="highlights">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape-dot shape-dot-1"></div>
             <div class="container">
                 <div class="text-center reveal">
                     <span class="section-label">What We Offer</span>
@@ -2866,6 +3213,8 @@
              ABOUT
              ============================================================ -->
         <section class="section about" id="about">
+            <div class="shape shape-3"></div>
+            <div class="shape-dot shape-dot-2"></div>
             <div class="container">
                 <div class="about-grid">
                     <div class="about-visual reveal-scale">
@@ -2883,7 +3232,7 @@
                         <span class="section-label">About Us</span>
                         <h2 class="section-title">ABOUT SUMIT STEEL</h2>
                         <p
-                            style="font-weight:600; color:var(--accent-gold); margin-bottom:16px; font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase;">
+                            style="font-weight:600; color:var(--black); margin-bottom:16px; font-size:0.8rem; letter-spacing:0.1em; text-transform:uppercase;">
                             Your Trusted Partner in Iron &amp; Steel
                         </p>
                         <p>
@@ -2916,6 +3265,10 @@
              30 YEARS SECTION
              ============================================================ -->
         <section class="years-section" id="years">
+            <div class="shape-line shape-line-1"></div>
+            <div class="shape-line shape-line-2"></div>
+            <div class="shape-dot shape-dot-1"></div>
+            <div class="shape-dot shape-dot-3"></div>
             <div class="container">
                 <div class="years-content reveal">
                     <div class="years-number">30</div>
@@ -2932,6 +3285,9 @@
              PRODUCTS
              ============================================================ -->
         <section class="section products" id="products">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape-dot shape-dot-2"></div>
             <div class="container">
                 <div class="text-center reveal">
                     <span class="section-label">Our Products</span>
@@ -3155,6 +3511,9 @@
              PROFILE CUTTING SERVICES
              ============================================================ -->
         <section class="section cutting" id="services">
+            <div class="shape shape-2"></div>
+            <div class="shape-line shape-line-3"></div>
+            <div class="shape-dot shape-dot-1"></div>
             <div class="container">
                 <div class="cutting-header reveal">
                     <span class="section-label">Our Services</span>
@@ -3204,6 +3563,8 @@
              WHY SUMIT STEEL
              ============================================================ -->
         <section class="section why" id="why-us">
+            <div class="shape shape-4"></div>
+            <div class="shape-dot shape-dot-2"></div>
             <div class="container">
                 <div class="text-center reveal">
                     <span class="section-label">Why Choose Us</span>
@@ -3297,6 +3658,8 @@
              QUALITY BANNER
              ============================================================ -->
         <section class="quality-banner">
+            <div class="shape-line shape-line-1"></div>
+            <div class="shape-dot shape-dot-3"></div>
             <div class="container">
                 <div class="quality-grid">
                     <div class="quality-item reveal">
@@ -3341,6 +3704,8 @@
              LOCATION
              ============================================================ -->
         <section class="section location" id="location">
+            <div class="shape shape-1"></div>
+            <div class="shape-dot shape-dot-1"></div>
             <div class="container">
                 <div class="text-center reveal">
                     <span class="section-label">Find Us</span>
@@ -3429,7 +3794,7 @@
                         </div>
 
                         <a href="https://maps.app.goo.gl/iskEUrJcy863pCtb7" target="_blank" rel="noopener noreferrer"
-                            class="btn btn-gold btn-lg" style="align-self:flex-start;">
+                            class="btn btn-black btn-lg" style="align-self:flex-start;">
                             Open in Google Maps
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -3447,6 +3812,8 @@
              CONTACT
              ============================================================ -->
         <section class="section contact" id="contact">
+            <div class="shape shape-3"></div>
+            <div class="shape-dot shape-dot-2"></div>
             <div class="container">
                 <div class="text-center reveal">
                     <span class="section-label">Get In Touch</span>
@@ -3518,10 +3885,10 @@
                     <div class="contact-card reveal" style="justify-content:center;">
                         <div style="text-align:center;">
                             <div
-                                style="width:72px;height:72px;border-radius:50%;background:rgba(201,168,76,0.08);border:1.5px solid var(--accent-gold);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
+                                style="width:72px;height:72px;border-radius:50%;background:rgba(0,0,0,0.04);border:1.5px solid var(--black);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;transition:all 0.5s cubic-bezier(0.34,1.56,0.64,1);">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round"
-                                    style="width:30px;height:30px;color:var(--accent-gold);" aria-hidden="true">
+                                    style="width:30px;height:30px;color:var(--black);" aria-hidden="true">
                                     <path
                                         d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
                                     </path>
@@ -3535,7 +3902,7 @@
                                 Your trusted partner in Iron &amp; Steel. Quality steel, reliable supply and long-term
                                 relationships.
                             </p>
-                            <a href="#quote" class="btn btn-gold btn-lg" style="width:100%;">
+                            <a href="#quote" class="btn btn-black btn-lg" style="width:100%;">
                                 Request a Quote
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -3553,6 +3920,9 @@
              REQUEST A QUOTE
              ============================================================ -->
         <section class="section quote" id="quote">
+            <div class="shape shape-4"></div>
+            <div class="shape-line shape-line-1"></div>
+            <div class="shape-dot shape-dot-1"></div>
             <div class="container">
                 <div class="text-center reveal">
                     <span class="section-label">Get a Quote</span>
@@ -3600,18 +3970,24 @@
                         </div>
                     </div>
 
-                    <form class="quote-form reveal" id="quoteForm" novalidate>
+                    <form class="quote-form reveal" id="quoteForm"
+                        action="https://formsubmit.co/sumitraut2012@gmail.com" method="POST" novalidate>
+                        <input type="hidden" name="_subject" value="New Quote Request - Sumit Steel Website" />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="hidden" name="_template" value="table" />
+                        <input type="hidden" name="_next" value="" />
+
                         <div class="form-row">
                             <div class="form-group">
                                 <label class="form-label" for="fullName">Full Name <span
                                         class="required">*</span></label>
-                                <input type="text" class="form-input" id="fullName" name="fullName"
+                                <input type="text" class="form-input" id="fullName" name="Full Name"
                                     placeholder="Enter your full name" autocomplete="name" required />
                                 <span class="form-error" id="fullNameError">Please enter your full name.</span>
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="companyName">Company Name</label>
-                                <input type="text" class="form-input" id="companyName" name="companyName"
+                                <input type="text" class="form-input" id="companyName" name="Company Name"
                                     placeholder="Enter your company name" autocomplete="organization" />
                                 <span class="form-error" id="companyNameError"></span>
                             </div>
@@ -3621,14 +3997,14 @@
                             <div class="form-group">
                                 <label class="form-label" for="phone">Phone Number <span
                                         class="required">*</span></label>
-                                <input type="tel" class="form-input" id="phone" name="phone"
+                                <input type="tel" class="form-input" id="phone" name="Phone Number"
                                     placeholder="Enter your phone number" autocomplete="tel" required />
                                 <span class="form-error" id="phoneError">Please enter a valid phone number.</span>
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="email">Email Address <span
                                         class="required">*</span></label>
-                                <input type="email" class="form-input" id="email" name="email"
+                                <input type="email" class="form-input" id="email" name="Email Address"
                                     placeholder="Enter your email address" autocomplete="email" required />
                                 <span class="form-error" id="emailError">Please enter a valid email address.</span>
                             </div>
@@ -3637,7 +4013,7 @@
                         <div class="form-group">
                             <label class="form-label" for="requirement">Product / Requirement <span
                                     class="required">*</span></label>
-                            <input type="text" class="form-input" id="requirement" name="requirement"
+                            <input type="text" class="form-input" id="requirement" name="Product Requirement"
                                 placeholder="e.g. I Beams, MS Plates, Profile Cutting" required />
                             <span class="form-error" id="requirementError">Please enter your product or
                                 requirement.</span>
@@ -3645,23 +4021,24 @@
 
                         <div class="form-group">
                             <label class="form-label" for="message">Message <span class="required">*</span></label>
-                            <textarea class="form-textarea" id="message" name="message"
+                            <textarea class="form-textarea" id="message" name="Message"
                                 placeholder="Tell us more about your requirements..." required></textarea>
                             <span class="form-error" id="messageError">Please enter your message.</span>
                         </div>
 
-                        <button type="submit" class="btn btn-gold btn-lg form-submit">
-                            Request Quote
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <button type="submit" class="btn btn-black btn-lg form-submit" id="submitBtn">
+                            <span class="spinner"></span>
+                            <span class="submit-text">Request Quote</span>
+                            <svg class="submit-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <line x1="22" y1="2" x2="11" y2="13"></line>
                                 <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                             </svg>
                         </button>
 
                         <p class="form-note">
-                            This is a front-end enquiry form. Your details will not be sent until a backend is
-                            connected.
+                            Your enquiry will be sent directly to <strong>sumitraut2012@gmail.com</strong>. We will get
+                            back to you shortly.
                         </p>
                     </form>
                 </div>
@@ -3674,15 +4051,16 @@
          FOOTER
          ============================================================ -->
     <footer class="footer" id="footer">
+        <div class="shape-line shape-line-2"></div>
         <div class="container">
             <div class="footer-grid">
                 <div>
                     <div class="footer-brand">
                         <svg class="footer-brand-logo" viewBox="0 0 100 100" fill="none"
                             xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M20 25 L50 10 L80 25 L50 40 Z" fill="#c9a84c" />
-                            <path d="M20 45 L50 30 L80 45 L50 60 Z" fill="#e0c060" />
-                            <path d="M20 65 L50 50 L80 65 L50 80 Z" fill="#c9a84c" />
+                            <path d="M20 25 L50 10 L80 25 L50 40 Z" fill="#ffffff" />
+                            <path d="M20 45 L50 30 L80 45 L50 60 Z" fill="#b8b8b8" />
+                            <path d="M20 65 L50 50 L80 65 L50 80 Z" fill="#ffffff" />
                         </svg>
                         <div>
                             <div class="footer-brand-name">SUMIT STEEL</div>
@@ -3817,7 +4195,7 @@
             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
             <polyline points="22 4 12 14.01 9 11.01"></polyline>
         </svg>
-        <span id="toastMessage">Thank you! Your enquiry has been received.</span>
+        <span id="toastMessage">Thank you! Your enquiry has been sent successfully.</span>
     </div>
 
     <!-- ============================================================
@@ -4064,12 +4442,13 @@
             }
 
             /* ============================================================
-               FORM VALIDATION
+               FORM VALIDATION + SUBMISSION
                ============================================================ */
             function initForms() {
                 const form = document.getElementById('quoteForm');
                 const toast = document.getElementById('toast');
                 const toastMessage = document.getElementById('toastMessage');
+                const submitBtn = document.getElementById('submitBtn');
 
                 if (!form) return;
 
@@ -4165,19 +4544,56 @@
                         return;
                     }
 
-                    toastMessage.textContent = 'Thank you! Your enquiry has been received. We will get back to you shortly.';
-                    toast.classList.add('show');
+                    // Show loading state
+                    submitBtn.classList.add('loading');
+                    submitBtn.querySelector('.submit-text').textContent = 'Sending...';
 
-                    setTimeout(function () {
-                        toast.classList.remove('show');
-                    }, 5000);
+                    // Prepare form data
+                    const formData = new FormData(form);
 
-                    form.reset();
-                    Object.keys(fields).forEach(function (key) {
-                        fields[key].input.classList.remove('error');
-                        fields[key].error.classList.remove('visible');
-                        fields[key].error.textContent = '';
-                    });
+                    // Submit via fetch to formsubmit.co
+                    fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                        .then(function (response) {
+                            if (response.ok) {
+                                // Success
+                                toastMessage.textContent = 'Thank you! Your enquiry has been sent successfully. We will get back to you shortly.';
+                                toast.classList.remove('error');
+                                toast.classList.add('show');
+
+                                setTimeout(function () {
+                                    toast.classList.remove('show');
+                                }, 6000);
+
+                                form.reset();
+                                Object.keys(fields).forEach(function (key) {
+                                    fields[key].input.classList.remove('error');
+                                    fields[key].error.classList.remove('visible');
+                                    fields[key].error.textContent = '';
+                                });
+                            } else {
+                                throw new Error('Form submission failed');
+                            }
+                        })
+                        .catch(function (error) {
+                            // Error - show fallback message
+                            toastMessage.textContent = 'Something went wrong. Please email us directly at sumitraut2012@gmail.com or call +91 91685 31919.';
+                            toast.classList.add('error');
+                            toast.classList.add('show');
+
+                            setTimeout(function () {
+                                toast.classList.remove('show');
+                            }, 8000);
+                        })
+                        .finally(function () {
+                            submitBtn.classList.remove('loading');
+                            submitBtn.querySelector('.submit-text').textContent = 'Request Quote';
+                        });
                 });
             }
 
