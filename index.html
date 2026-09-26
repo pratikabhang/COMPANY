@@ -1,0 +1,4149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sumit Steel, led by Sumit Raut, provides iron and steel products, profile cutting services, dealership and stockist support in Bhosari, Pune." />
+    <meta name="theme-color" content="#0a1f44" />
+    <meta property="og:title" content="Sumit Steel | Iron & Steel Dealers, Stockist & Profile Cutting" />
+    <meta property="og:description" content="Expert profile cutters, dealers & stockist of Iron & Steel. 30 Years of Experience. Bhosari, Pune." />
+    <meta property="og:type" content="website" />
+    <title>Sumit Steel | Iron & Steel Dealers, Stockist & Profile Cutting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <style>
+        /* ============================================================
+           RESET & BASE
+           ============================================================ */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Light Theme (default) */
+            --bg-primary: #f5f7fa;
+            --bg-secondary: #ffffff;
+            --bg-card: #ffffff;
+            --bg-card-hover: #fafbfc;
+            --bg-header: rgba(255, 255, 255, 0.85);
+            --bg-header-solid: rgba(255, 255, 255, 0.98);
+            --bg-footer: #0a1f44;
+            --bg-hero: #0a1f44;
+            --bg-input: #ffffff;
+            --bg-badge: #0a1f44;
+
+            --text-primary: #0a1f44;
+            --text-secondary: #4a5568;
+            --text-muted: #718096;
+            --text-on-dark: #ffffff;
+            --text-on-dark-secondary: #cbd5e0;
+
+            --border-color: #e2e8f0;
+            --border-light: #edf2f7;
+            --border-focus: #2563eb;
+
+            --accent-blue: #2563eb;
+            --accent-blue-dark: #1d4ed8;
+            --accent-blue-light: #3b82f6;
+            --accent-gold: #d4a843;
+            --accent-gold-light: #e8c468;
+            --accent-gold-dark: #b8912e;
+
+            --shadow-sm: 0 1px 2px rgba(10, 31, 68, 0.06);
+            --shadow-md: 0 4px 12px rgba(10, 31, 68, 0.08);
+            --shadow-lg: 0 12px 32px rgba(10, 31, 68, 0.12);
+            --shadow-xl: 0 20px 48px rgba(10, 31, 68, 0.16);
+
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+
+            --transition-fast: 180ms cubic-bezier(0.22, 1, 0.36, 1);
+            --transition-base: 250ms cubic-bezier(0.22, 1, 0.36, 1);
+            --transition-smooth: 300ms cubic-bezier(0.22, 1, 0.36, 1);
+            --transition-slow: 500ms cubic-bezier(0.22, 1, 0.36, 1);
+            --transition-reveal: 700ms cubic-bezier(0.22, 1, 0.36, 1);
+
+            --header-height: 72px;
+            --header-height-scrolled: 60px;
+            --max-width: 1400px;
+            --mobile-bar-height: 64px;
+        }
+
+        /* ============================================================
+           DARK THEME
+           ============================================================ */
+        [data-theme="dark"] {
+            --bg-primary: #0b1424;
+            --bg-secondary: #0f1b30;
+            --bg-card: #152238;
+            --bg-card-hover: #1a2a45;
+            --bg-header: rgba(11, 20, 36, 0.85);
+            --bg-header-solid: rgba(11, 20, 36, 0.98);
+            --bg-footer: #070d18;
+            --bg-hero: #0a1f44;
+            --bg-input: #1a2a45;
+            --bg-badge: #152238;
+
+            --text-primary: #f0f4f8;
+            --text-secondary: #a0aec0;
+            --text-muted: #718096;
+            --text-on-dark: #ffffff;
+            --text-on-dark-secondary: #a0aec0;
+
+            --border-color: #1e3050;
+            --border-light: #1a2a45;
+            --border-focus: #3b82f6;
+
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
+            --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.6);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
+            transition: background-color var(--transition-smooth), color var(--transition-smooth);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-bottom: calc(var(--mobile-bar-height) + env(safe-area-inset-bottom, 0px));
+            }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        input,
+        textarea,
+        select {
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--border-focus);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        ::selection {
+            background: var(--accent-blue);
+            color: #fff;
+        }
+
+        /* ============================================================
+           UTILITY
+           ============================================================ */
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+        }
+
+        .section {
+            padding: 96px 0;
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 64px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .section {
+                padding: 48px 0;
+            }
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--accent-blue);
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .section-label::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: var(--accent-gold);
+            margin-top: 8px;
+        }
+
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+            font-weight: 800;
+            line-height: 1.15;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-subtitle {
+            font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+            color: var(--text-secondary);
+            max-width: 640px;
+            line-height: 1.7;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-center .section-label::after {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .text-center .section-subtitle {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ============================================================
+           REVEAL ANIMATIONS
+           ============================================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity var(--transition-reveal), transform var(--transition-reveal);
+        }
+
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.96);
+            transition: opacity var(--transition-reveal), transform var(--transition-reveal);
+        }
+
+        .reveal-scale.revealed {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .stagger-item {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 600ms cubic-bezier(0.22, 1, 0.36, 1),
+                        transform 600ms cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .stagger-item.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================================================
+           HEADER
+           ============================================================ */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: var(--header-height);
+            background: var(--bg-header);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            border-bottom: 1px solid var(--border-color);
+            transition: height var(--transition-smooth),
+                        background var(--transition-smooth),
+                        box-shadow var(--transition-smooth),
+                        border-color var(--transition-smooth);
+        }
+
+        .header.scrolled {
+            height: var(--header-height-scrolled);
+            background: var(--bg-header-solid);
+            box-shadow: var(--shadow-md);
+            border-bottom-color: transparent;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            gap: 24px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+            transition: transform var(--transition-base);
+        }
+
+        .brand:hover {
+            transform: scale(1.02);
+        }
+
+        .brand-logo {
+            width: 40px;
+            height: 40px;
+            flex-shrink: 0;
+            transition: width var(--transition-smooth), height var(--transition-smooth);
+        }
+
+        .header.scrolled .brand-logo {
+            width: 34px;
+            height: 34px;
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .brand-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 900;
+            letter-spacing: 0.02em;
+            color: var(--text-primary);
+            transition: font-size var(--transition-smooth);
+        }
+
+        .header.scrolled .brand-name {
+            font-size: 1.05rem;
+        }
+
+        .brand-tagline {
+            font-size: 0.55rem;
+            font-weight: 600;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            transition: font-size var(--transition-smooth);
+        }
+
+        .header.scrolled .brand-tagline {
+            font-size: 0.5rem;
+        }
+
+        .nav-desktop {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            list-style: none;
+        }
+
+        .nav-desktop a {
+            display: block;
+            padding: 8px 14px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            border-radius: var(--radius-sm);
+            transition: color var(--transition-fast), background var(--transition-fast);
+            position: relative;
+        }
+
+        .nav-desktop a:hover {
+            color: var(--accent-blue);
+            background: rgba(37, 99, 235, 0.06);
+        }
+
+        .nav-desktop a.active {
+            color: var(--accent-blue);
+            font-weight: 600;
+        }
+
+        .nav-desktop a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 14px;
+            right: 14px;
+            height: 2px;
+            background: var(--accent-gold);
+            border-radius: 2px;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            transition: all var(--transition-base);
+            flex-shrink: 0;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+            transform: rotate(15deg);
+        }
+
+        .theme-toggle svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .theme-toggle .sun-icon {
+            display: none;
+        }
+
+        .theme-toggle .moon-icon {
+            display: block;
+        }
+
+        [data-theme="dark"] .theme-toggle .sun-icon {
+            display: block;
+        }
+
+        [data-theme="dark"] .theme-toggle .moon-icon {
+            display: none;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px 22px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: var(--radius-sm);
+            transition: all var(--transition-base);
+            white-space: nowrap;
+            min-height: 44px;
+            letter-spacing: 0.01em;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn svg {
+            width: 16px;
+            height: 16px;
+            transition: transform var(--transition-base);
+            flex-shrink: 0;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            color: #fff;
+            box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
+        }
+
+        .btn-primary:hover svg {
+            transform: translateX(3px);
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
+            color: #0a1f44;
+            box-shadow: 0 4px 14px rgba(212, 168, 67, 0.3);
+        }
+
+        .btn-gold:hover {
+            box-shadow: 0 8px 24px rgba(212, 168, 67, 0.4);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--text-primary);
+            border: 1.5px solid var(--border-color);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+            background: rgba(37, 99, 235, 0.04);
+        }
+
+        .btn-outline-light {
+            background: transparent;
+            color: #fff;
+            border: 1.5px solid rgba(255, 255, 255, 0.35);
+        }
+
+        .btn-outline-light:hover {
+            border-color: #fff;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-lg {
+            padding: 14px 28px;
+            font-size: 0.95rem;
+            min-height: 52px;
+        }
+
+        .header-quote-btn {
+            display: inline-flex;
+        }
+
+        /* Hamburger */
+        .hamburger {
+            display: none;
+            width: 44px;
+            height: 44px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            border-radius: var(--radius-sm);
+            transition: background var(--transition-fast);
+            flex-shrink: 0;
+        }
+
+        .hamburger:hover {
+            background: var(--bg-card);
+        }
+
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--text-primary);
+            border-radius: 2px;
+            transition: all var(--transition-smooth);
+            transform-origin: center;
+        }
+
+        .hamburger.active span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+            transform: scaleX(0);
+        }
+
+        .hamburger.active span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            inset: 0;
+            z-index: 999;
+            pointer-events: none;
+            visibility: hidden;
+            transition: visibility var(--transition-smooth);
+        }
+
+        .mobile-menu.open {
+            pointer-events: auto;
+            visibility: visible;
+        }
+
+        .mobile-menu-backdrop {
+            position: absolute;
+            inset: 0;
+            background: rgba(10, 31, 68, 0.5);
+            backdrop-filter: blur(4px);
+            opacity: 0;
+            transition: opacity var(--transition-smooth);
+        }
+
+        .mobile-menu.open .mobile-menu-backdrop {
+            opacity: 1;
+        }
+
+        .mobile-menu-panel {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: min(340px, 85vw);
+            height: 100%;
+            background: var(--bg-secondary);
+            box-shadow: var(--shadow-xl);
+            transform: translateX(100%);
+            transition: transform var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            padding: calc(var(--header-height) + 16px) 24px 32px;
+            overflow-y: auto;
+        }
+
+        .mobile-menu.open .mobile-menu-panel {
+            transform: translateX(0);
+        }
+
+        .mobile-nav {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .mobile-nav a {
+            display: block;
+            padding: 14px 16px;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            border-radius: var(--radius-sm);
+            transition: all var(--transition-fast);
+        }
+
+        .mobile-nav a:hover,
+        .mobile-nav a.active {
+            background: rgba(37, 99, 235, 0.08);
+            color: var(--accent-blue);
+        }
+
+        .mobile-menu-footer {
+            margin-top: auto;
+            padding-top: 24px;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* ============================================================
+           HERO
+           ============================================================ */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            min-height: 100svh;
+            display: flex;
+            align-items: center;
+            background: var(--bg-hero);
+            overflow: hidden;
+            padding-top: var(--header-height);
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .hero-bg-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.18;
+            transform: scale(1.05);
+            animation: heroBgMove 20s ease-in-out infinite alternate;
+        }
+
+        @keyframes heroBgMove {
+            0% { transform: scale(1.05) translate(0, 0); }
+            100% { transform: scale(1.1) translate(-10px, -10px); }
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse at 20% 50%, rgba(37, 99, 235, 0.25) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(212, 168, 67, 0.08) 0%, transparent 50%),
+                linear-gradient(135deg, #0a1f44 0%, #0d2a5c 50%, #0a1f44 100%);
+        }
+
+        .hero-grid-overlay {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+            -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            gap: 48px;
+            padding: 80px 0;
+        }
+
+        .hero-text {
+            max-width: 720px;
+        }
+
+        .hero-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: heroFadeUp 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.2s forwards;
+        }
+
+        .hero-label::before {
+            content: '';
+            width: 32px;
+            height: 2px;
+            background: var(--accent-gold);
+        }
+
+        .hero-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(2.2rem, 6vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1.05;
+            color: #fff;
+            margin-bottom: 20px;
+            letter-spacing: -0.03em;
+            opacity: 0;
+            transform: translateY(40px);
+            animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.35s forwards;
+        }
+
+        .hero-title .accent {
+            color: var(--accent-gold);
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-title .accent::after {
+            content: '';
+            position: absolute;
+            bottom: 4px;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-gold), transparent);
+            border-radius: 2px;
+            opacity: 0.5;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 1.8vw, 1.25rem);
+            color: var(--text-on-dark-secondary);
+            line-height: 1.7;
+            margin-bottom: 16px;
+            max-width: 560px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.5s forwards;
+        }
+
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 32px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.6s forwards;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.85);
+            padding: 6px 12px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 100px;
+            backdrop-filter: blur(4px);
+        }
+
+        .hero-tag svg {
+            width: 12px;
+            height: 12px;
+            color: var(--accent-gold);
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            opacity: 0;
+            transform: translateY(30px);
+            animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.7s forwards;
+        }
+
+        .hero-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: scale(0.8) rotate(-8deg);
+            animation: heroBadgeIn 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.85s forwards;
+        }
+
+        .badge-circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, #0d2a5c, #0a1f44);
+            border: 3px solid var(--accent-gold);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            box-shadow:
+                0 0 0 8px rgba(212, 168, 67, 0.12),
+                0 0 0 16px rgba(212, 168, 67, 0.05),
+                0 20px 60px rgba(0, 0, 0, 0.4);
+            animation: badgePulse 3s ease-in-out infinite;
+        }
+
+        @keyframes badgePulse {
+            0%, 100% { box-shadow: 0 0 0 8px rgba(212, 168, 67, 0.12), 0 0 0 16px rgba(212, 168, 67, 0.05), 0 20px 60px rgba(0, 0, 0, 0.4); }
+            50% { box-shadow: 0 0 0 12px rgba(212, 168, 67, 0.18), 0 0 0 24px rgba(212, 168, 67, 0.06), 0 20px 60px rgba(0, 0, 0, 0.4); }
+        }
+
+        .badge-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--accent-gold);
+            line-height: 1;
+            background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold), var(--accent-gold-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .badge-text {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: 4px;
+        }
+
+        .badge-sub {
+            font-size: 0.55rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 2px;
+        }
+
+        @keyframes heroFadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes heroBadgeIn {
+            to {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        /* ============================================================
+           HIGHLIGHTS
+           ============================================================ */
+        .highlights {
+            background: var(--bg-primary);
+            position: relative;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .highlight-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 32px 24px;
+            transition: all var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .highlight-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-gold));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--transition-smooth);
+        }
+
+        .highlight-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(37, 99, 235, 0.2);
+        }
+
+        .highlight-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: var(--radius-md);
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.05));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            color: var(--accent-blue);
+            transition: all var(--transition-smooth);
+        }
+
+        .highlight-card:hover .highlight-icon {
+            transform: scale(1.1) rotate(-5deg);
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            color: #fff;
+        }
+
+        .highlight-icon svg {
+            width: 26px;
+            height: 26px;
+        }
+
+        .highlight-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .highlight-desc {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* ============================================================
+           ABOUT
+           ============================================================ */
+        .about {
+            background: var(--bg-secondary);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .about-visual {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            aspect-ratio: 4 / 3;
+            background: linear-gradient(135deg, #0a1f44, #1d4ed8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about-visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform var(--transition-slow);
+        }
+
+        .about-visual:hover img {
+            transform: scale(1.03);
+        }
+
+        .about-visual-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(10, 31, 68, 0.6), rgba(37, 99, 235, 0.3));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px;
+        }
+
+        .about-visual-content {
+            text-align: center;
+            color: #fff;
+        }
+
+        .about-visual-content .big-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .about-visual-content .big-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 8px;
+        }
+
+        .about-text {
+            max-width: 560px;
+        }
+
+        .about-text p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 32px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .about-stat {
+            text-align: center;
+        }
+
+        .about-stat-value {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+            line-height: 1.2;
+        }
+
+        .about-stat-label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* ============================================================
+           30 YEARS SECTION
+           ============================================================ */
+        .years-section {
+            position: relative;
+            background: linear-gradient(135deg, #0a1f44 0%, #0d2a5c 50%, #0a1f44 100%);
+            overflow: hidden;
+            padding: 96px 0;
+        }
+
+        .years-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+
+        .years-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .years-number {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(5rem, 15vw, 10rem);
+            font-weight: 900;
+            line-height: 0.9;
+            background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold), var(--accent-gold-dark));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 0 40px rgba(212, 168, 67, 0.3));
+        }
+
+        .years-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: #fff;
+            margin-top: 8px;
+        }
+
+        .years-desc {
+            font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+            color: var(--text-on-dark-secondary);
+            line-height: 1.8;
+            margin-top: 24px;
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .years-divider {
+            width: 60px;
+            height: 3px;
+            background: var(--accent-gold);
+            margin: 32px auto 0;
+            border-radius: 3px;
+        }
+
+        /* ============================================================
+           PRODUCTS
+           ============================================================ */
+        .products {
+            background: var(--bg-primary);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+            margin-top: 48px;
+        }
+
+        .product-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 28px 22px;
+            transition: all var(--transition-smooth);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-gold));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform var(--transition-smooth);
+        }
+
+        .product-card:hover::after {
+            transform: scaleX(1);
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(37, 99, 235, 0.2);
+        }
+
+        .product-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-sm);
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.03));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            color: var(--accent-blue);
+            transition: all var(--transition-smooth);
+        }
+
+        .product-card:hover .product-icon {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            color: #fff;
+            transform: scale(1.08);
+        }
+
+        .product-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .product-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            letter-spacing: 0.01em;
+        }
+
+        .product-desc {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+
+        .product-enquire {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--accent-blue);
+            transition: all var(--transition-base);
+            align-self: flex-start;
+            padding: 6px 0;
+            min-height: 36px;
+        }
+
+        .product-enquire:hover {
+            gap: 10px;
+            color: var(--accent-gold);
+        }
+
+        .product-enquire svg {
+            width: 14px;
+            height: 14px;
+            transition: transform var(--transition-base);
+        }
+
+        .product-enquire:hover svg {
+            transform: translateX(3px);
+        }
+
+        /* ============================================================
+           PROFILE CUTTING
+           ============================================================ */
+        .cutting {
+            background: var(--bg-secondary);
+        }
+
+        .cutting-header {
+            text-align: center;
+            max-width: 720px;
+            margin: 0 auto 56px;
+        }
+
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 36px;
+            left: 12%;
+            right: 12%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--border-color), var(--accent-blue), var(--border-color));
+            z-index: 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 0 8px;
+        }
+
+        .timeline-number {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 2px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+            transition: all var(--transition-smooth);
+            position: relative;
+        }
+
+        .timeline-item.revealed .timeline-number {
+            border-color: var(--accent-gold);
+            background: linear-gradient(135deg, var(--bg-card), rgba(212, 168, 67, 0.05));
+        }
+
+        .timeline-item:hover .timeline-number {
+            transform: scale(1.1);
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            color: #fff;
+            border-color: var(--accent-blue);
+            box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+        }
+
+        .timeline-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .timeline-desc {
+            font-size: 0.82rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ============================================================
+           WHY SUMIT STEEL
+           ============================================================ */
+        .why {
+            background: var(--bg-primary);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 48px;
+        }
+
+        .why-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 32px 24px;
+            transition: all var(--transition-smooth);
+            text-align: center;
+        }
+
+        .why-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(212, 168, 67, 0.3);
+        }
+
+        .why-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(212, 168, 67, 0.1));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: var(--accent-blue);
+            transition: all var(--transition-smooth);
+        }
+
+        .why-card:hover .why-icon {
+            background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
+            color: #0a1f44;
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .why-icon svg {
+            width: 28px;
+            height: 28px;
+        }
+
+        .why-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 10px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        .why-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        /* ============================================================
+           QUALITY / DELIVERY / SATISFACTION BANNER
+           ============================================================ */
+        .quality-banner {
+            background: linear-gradient(135deg, #0a1f44, #0d2a5c);
+            padding: 64px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quality-banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 30% 50%, rgba(212, 168, 67, 0.08), transparent 60%);
+        }
+
+        .quality-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .quality-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            justify-content: center;
+        }
+
+        .quality-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: var(--radius-md);
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-gold);
+            flex-shrink: 0;
+        }
+
+        .quality-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .quality-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        /* ============================================================
+           LOCATION
+           ============================================================ */
+        .location {
+            background: var(--bg-secondary);
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: stretch;
+            margin-top: 48px;
+        }
+
+        .map-card {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            background: var(--bg-card);
+            position: relative;
+            min-height: 300px;
+            max-height: 330px;
+            transition: all var(--transition-smooth);
+            box-shadow: var(--shadow-md);
+        }
+
+        .map-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+
+        .map-visual {
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(rgba(10, 31, 68, 0.85), rgba(13, 42, 92, 0.85)),
+                repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(255, 255, 255, 0.03) 40px, rgba(255, 255, 255, 0.03) 41px),
+                repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(255, 255, 255, 0.03) 40px, rgba(255, 255, 255, 0.03) 41px),
+                linear-gradient(135deg, #0a1f44, #1d4ed8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .map-pin-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: rgba(212, 168, 67, 0.15);
+            border: 2px solid var(--accent-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-gold);
+            margin-bottom: 16px;
+            animation: mapPinPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes mapPinPulse {
+            0%, 100% { transform: translateY(0); box-shadow: 0 0 0 0 rgba(212, 168, 67, 0.3); }
+            50% { transform: translateY(-6px); box-shadow: 0 0 0 16px rgba(212, 168, 67, 0); }
+        }
+
+        .map-pin-icon svg {
+            width: 26px;
+            height: 26px;
+        }
+
+        .map-label {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .map-sublabel {
+            font-size: 0.78rem;
+            color: rgba(255, 255, 255, 0.65);
+            margin-bottom: 20px;
+        }
+
+        .map-open-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #0a1f44;
+            background: linear-gradient(135deg, var(--accent-gold-light), var(--accent-gold));
+            border-radius: var(--radius-sm);
+            transition: all var(--transition-base);
+            min-height: 44px;
+        }
+
+        .map-open-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(212, 168, 67, 0.4);
+        }
+
+        .map-open-btn svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        .location-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .location-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .location-item-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-sm);
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.03));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-blue);
+            flex-shrink: 0;
+            transition: all var(--transition-base);
+        }
+
+        .location-item:hover .location-item-icon {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            color: #fff;
+        }
+
+        .location-item-icon svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .location-item-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .location-item-value {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
+
+        .location-item-value a {
+            transition: color var(--transition-fast);
+        }
+
+        .location-item-value a:hover {
+            color: var(--accent-blue);
+        }
+
+        /* ============================================================
+           CONTACT
+           ============================================================ */
+        .contact {
+            background: var(--bg-primary);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-top: 48px;
+        }
+
+        .contact-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 40px 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            transition: all var(--transition-smooth);
+        }
+
+        .contact-card:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-person {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .contact-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .contact-person-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        .contact-person-role {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .contact-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact-btn {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 20px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            transition: all var(--transition-base);
+            text-align: left;
+            min-height: 56px;
+        }
+
+        .contact-btn:hover {
+            transform: translateX(4px);
+            border-color: var(--accent-blue);
+            box-shadow: var(--shadow-md);
+        }
+
+        .contact-btn-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-sm);
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.03));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-blue);
+            flex-shrink: 0;
+            transition: all var(--transition-base);
+        }
+
+        .contact-btn:hover .contact-btn-icon {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            color: #fff;
+        }
+
+        .contact-btn-icon svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        .contact-btn-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+        }
+
+        .contact-btn-value {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ============================================================
+           QUOTE FORM
+           ============================================================ */
+        .quote {
+            background: var(--bg-secondary);
+        }
+
+        .quote-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 64px;
+            align-items: start;
+            margin-top: 48px;
+        }
+
+        .quote-info {
+            position: sticky;
+            top: 100px;
+        }
+
+        .quote-info p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+
+        .quote-features {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .quote-feature {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .quote-feature svg {
+            width: 20px;
+            height: 20px;
+            color: var(--accent-gold);
+            flex-shrink: 0;
+        }
+
+        .quote-form {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 40px 32px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 6px;
+            letter-spacing: 0.02em;
+        }
+
+        .form-label .required {
+            color: #e53e3e;
+            margin-left: 2px;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 12px 16px;
+            background: var(--bg-input);
+            border: 1.5px solid var(--border-color);
+            border-radius: var(--radius-sm);
+            color: var(--text-primary);
+            font-size: 0.9rem;
+            transition: all var(--transition-base);
+            min-height: 48px;
+        }
+
+        .form-input::placeholder,
+        .form-textarea::placeholder {
+            color: var(--text-muted);
+            opacity: 0.7;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+        }
+
+        .form-input.error,
+        .form-textarea.error {
+            border-color: #e53e3e;
+            box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+            line-height: 1.6;
+        }
+
+        .form-error {
+            display: none;
+            font-size: 0.75rem;
+            color: #e53e3e;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        .form-error.visible {
+            display: block;
+            animation: shakeIn 0.3s ease;
+        }
+
+        @keyframes shakeIn {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-4px); }
+            75% { transform: translateX(4px); }
+        }
+
+        .form-submit {
+            width: 100%;
+            margin-top: 8px;
+        }
+
+        .form-note {
+            font-size: 0.72rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: 14px;
+            line-height: 1.5;
+        }
+
+        /* Toast */
+        .toast {
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%) translateY(20px);
+            background: linear-gradient(135deg, #0a1f44, #0d2a5c);
+            color: #fff;
+            padding: 16px 28px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-xl);
+            border: 1px solid rgba(212, 168, 67, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-smooth);
+            z-index: 2000;
+            max-width: calc(100vw - 32px);
+        }
+
+        .toast.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        .toast svg {
+            width: 20px;
+            height: 20px;
+            color: var(--accent-gold);
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .toast {
+                bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+            }
+        }
+
+        /* ============================================================
+           FOOTER
+           ============================================================ */
+        .footer {
+            background: var(--bg-footer);
+            color: #fff;
+            padding: 72px 0 32px;
+            position: relative;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1.5fr;
+            gap: 48px;
+            margin-bottom: 48px;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .footer-brand-logo {
+            width: 44px;
+            height: 44px;
+        }
+
+        .footer-brand-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 900;
+            letter-spacing: 0.02em;
+        }
+
+        .footer-desc {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+            margin-bottom: 16px;
+            max-width: 320px;
+        }
+
+        .footer-tagline {
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+        }
+
+        .footer-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.65);
+            transition: all var(--transition-fast);
+            display: inline-block;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-gold);
+            transform: translateX(4px);
+        }
+
+        .footer-contact-item {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+            align-items: flex-start;
+        }
+
+        .footer-contact-item svg {
+            width: 18px;
+            height: 18px;
+            color: var(--accent-gold);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .footer-contact-item span,
+        .footer-contact-item a {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.5;
+            transition: color var(--transition-fast);
+        }
+
+        .footer-contact-item a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .footer-copy {
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .footer-maps-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--accent-gold);
+            transition: all var(--transition-base);
+        }
+
+        .footer-maps-link:hover {
+            gap: 10px;
+        }
+
+        .footer-maps-link svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        /* ============================================================
+           BACK TO TOP
+           ============================================================ */
+        .back-to-top {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-blue-dark));
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(16px);
+            transition: all var(--transition-smooth);
+            z-index: 900;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(37, 99, 235, 0.4);
+        }
+
+        .back-to-top svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .back-to-top {
+                bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+                right: 16px;
+                width: 44px;
+                height: 44px;
+            }
+        }
+
+        /* ============================================================
+           MOBILE BOTTOM BAR
+           ============================================================ */
+        .mobile-bar {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: calc(var(--mobile-bar-height) + env(safe-area-inset-bottom, 0px));
+            padding-bottom: env(safe-area-inset-bottom, 0px);
+            background: var(--bg-header-solid);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            border-top: 1px solid var(--border-color);
+            z-index: 950;
+            box-shadow: 0 -4px 20px rgba(10, 31, 68, 0.1);
+        }
+
+        .mobile-bar-inner {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            height: var(--mobile-bar-height);
+        }
+
+        .mobile-bar-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 3px;
+            color: var(--text-secondary);
+            transition: all var(--transition-fast);
+            min-height: 44px;
+            padding: 6px;
+        }
+
+        .mobile-bar-btn:hover,
+        .mobile-bar-btn:active {
+            color: var(--accent-blue);
+            background: rgba(37, 99, 235, 0.05);
+        }
+
+        .mobile-bar-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .mobile-bar-btn span {
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-bar {
+                display: block;
+            }
+        }
+
+        /* ============================================================
+           RESPONSIVE — TABLET
+           ============================================================ */
+        @media (max-width: 1024px) {
+            .highlights-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .about-visual {
+                max-width: 560px;
+                margin: 0 auto;
+                width: 100%;
+            }
+
+            .about-text {
+                max-width: 100%;
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .location-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .map-card {
+                max-width: 100%;
+                min-height: 280px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .quote-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .quote-info {
+                position: static;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+
+            .timeline {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 32px;
+            }
+
+            .timeline::before {
+                display: none;
+            }
+        }
+
+        /* ============================================================
+           RESPONSIVE — MOBILE
+           ============================================================ */
+        @media (max-width: 768px) {
+            .nav-desktop {
+                display: none;
+            }
+
+            .header-quote-btn {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .theme-toggle {
+                width: 38px;
+                height: 38px;
+            }
+
+            .brand-logo {
+                width: 34px;
+                height: 34px;
+            }
+
+            .brand-name {
+                font-size: 1rem;
+            }
+
+            .brand-tagline {
+                font-size: 0.5rem;
+            }
+
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 60px 0;
+                text-align: center;
+            }
+
+            .hero-text {
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-label {
+                justify-content: center;
+            }
+
+            .hero-subtitle {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-tags {
+                justify-content: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+                width: 100%;
+            }
+
+            .hero-buttons .btn {
+                flex: 1 1 auto;
+                min-width: 140px;
+            }
+
+            .hero-badge {
+                justify-content: center;
+            }
+
+            .badge-circle {
+                width: 160px;
+                height: 160px;
+            }
+
+            .badge-number {
+                font-size: 2.8rem;
+            }
+
+            .highlights-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+
+            .highlight-card {
+                padding: 24px 18px;
+            }
+
+            .highlight-icon {
+                width: 48px;
+                height: 48px;
+            }
+
+            .highlight-icon svg {
+                width: 22px;
+                height: 22px;
+            }
+
+            .highlight-title {
+                font-size: 0.9rem;
+            }
+
+            .highlight-desc {
+                font-size: 0.8rem;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px;
+            }
+
+            .why-card {
+                padding: 24px 16px;
+            }
+
+            .quality-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .quality-item {
+                justify-content: flex-start;
+                padding-left: 8px;
+            }
+
+            .timeline {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .timeline-item {
+                display: flex;
+                gap: 20px;
+                text-align: left;
+                align-items: flex-start;
+            }
+
+            .timeline-number {
+                margin: 0;
+                flex-shrink: 0;
+                width: 60px;
+                height: 60px;
+                font-size: 1.1rem;
+            }
+
+            .timeline-content {
+                padding-top: 4px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-card {
+                padding: 28px 20px;
+            }
+
+            .quote-form {
+                padding: 28px 20px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .about-stats {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 12px;
+            }
+
+            .about-stat-value {
+                font-size: 1.2rem;
+            }
+
+            .about-stat-label {
+                font-size: 0.6rem;
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 16px;
+            }
+
+            .product-card {
+                padding: 22px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .highlights-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 12px;
+            }
+
+            .product-card {
+                padding: 20px 14px;
+            }
+
+            .product-title {
+                font-size: 0.85rem;
+            }
+
+            .product-desc {
+                font-size: 0.75rem;
+            }
+
+            .hero-buttons .btn {
+                flex: 1 1 100%;
+                min-width: 100%;
+            }
+
+            .badge-circle {
+                width: 140px;
+                height: 140px;
+            }
+
+            .badge-number {
+                font-size: 2.4rem;
+            }
+
+            .badge-text {
+                font-size: 0.6rem;
+            }
+
+            .badge-sub {
+                font-size: 0.48rem;
+            }
+
+            .contact-btn-value {
+                font-size: 0.82rem;
+            }
+
+            .map-card {
+                min-height: 240px;
+                max-height: 280px;
+            }
+
+            .about-stats {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
+            }
+
+            .about-stat-value {
+                font-size: 1rem;
+            }
+
+            .about-stat-label {
+                font-size: 0.55rem;
+            }
+        }
+
+        @media (max-width: 360px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .brand-tagline {
+                display: none;
+            }
+        }
+
+        /* ============================================================
+           REDUCED MOTION
+           ============================================================ */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+
+            .reveal,
+            .reveal-scale,
+            .stagger-item {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+
+            .hero-label,
+            .hero-title,
+            .hero-subtitle,
+            .hero-tags,
+            .hero-buttons,
+            .hero-badge {
+                opacity: 1 !important;
+                transform: none !important;
+                animation: none !important;
+            }
+
+            .hero-bg-img {
+                animation: none !important;
+            }
+
+            .badge-circle {
+                animation: none !important;
+            }
+
+            .map-pin-icon {
+                animation: none !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================
+         HEADER
+         ============================================================ -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#home" class="brand" aria-label="Sumit Steel - Home">
+                <svg class="brand-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M20 25 L50 10 L80 25 L50 40 Z" fill="#2563eb"/>
+                    <path d="M20 45 L50 30 L80 45 L50 60 Z" fill="#3b82f6"/>
+                    <path d="M20 65 L50 50 L80 65 L50 80 Z" fill="#2563eb"/>
+                </svg>
+                <div class="brand-text">
+                    <span class="brand-name">SUMIT STEEL</span>
+                    <span class="brand-tagline">Steel Today | Stronger Tomorrow</span>
+                </div>
+            </a>
+
+            <nav aria-label="Main navigation">
+                <ul class="nav-desktop" id="navDesktop">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                    <li><a href="#location" class="nav-link">Location</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light theme" title="Toggle theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+
+                <a href="#quote" class="btn btn-primary header-quote-btn">
+                    Request Quote
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+
+                <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================================================
+         MOBILE MENU
+         ============================================================ -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-backdrop" id="mobileBackdrop"></div>
+        <div class="mobile-menu-panel">
+            <nav aria-label="Mobile navigation">
+                <ul class="mobile-nav" id="mobileNav">
+                    <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+                    <li><a href="#about" class="mobile-nav-link">About</a></li>
+                    <li><a href="#products" class="mobile-nav-link">Products</a></li>
+                    <li><a href="#services" class="mobile-nav-link">Services</a></li>
+                    <li><a href="#why-us" class="mobile-nav-link">Why Us</a></li>
+                    <li><a href="#location" class="mobile-nav-link">Location</a></li>
+                    <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-footer">
+                <a href="#quote" class="btn btn-primary mobile-nav-link" style="width:100%;">
+                    Request Quote
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- ============================================================
+             HERO
+             ============================================================ -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <img class="hero-bg-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1920' height='1080' viewBox='0 0 1920 1080'%3E%3Crect fill='%230a1f44' width='1920' height='1080'/%3E%3C/svg%3E" alt="" aria-hidden="true" loading="eager" />
+                <div class="hero-overlay"></div>
+                <div class="hero-grid-overlay"></div>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <span class="hero-label">Expert Profile Cutters, Dealers &amp; Stockist</span>
+                        <h1 class="hero-title">
+                            YOUR TRUSTED PARTNER IN<br />
+                            <span class="accent">IRON &amp; STEEL</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Expert Profile Cutters, Dealers &amp; Stockist of Iron &amp; Steel.
+                            Providing quality steel and reliable supply for your business needs.
+                        </p>
+                        <div class="hero-tags">
+                            <span class="hero-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Quality Steel
+                            </span>
+                            <span class="hero-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Reliable Supply
+                            </span>
+                            <span class="hero-tag">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                Long Term Relationships
+                            </span>
+                        </div>
+                        <div class="hero-buttons">
+                            <a href="#quote" class="btn btn-gold btn-lg">
+                                Request a Quote
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                            <a href="#products" class="btn btn-outline-light btn-lg">
+                                View Products
+                            </a>
+                            <a href="https://maps.app.goo.gl/iskEUrJcy863pCtb7" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-lg">
+                                Open Location
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-badge">
+                        <div class="badge-circle">
+                            <span class="badge-number">30</span>
+                            <span class="badge-text">Years</span>
+                            <span class="badge-sub">Of Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             BUSINESS HIGHLIGHTS
+             ============================================================ -->
+        <section class="section highlights" id="highlights">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-label">What We Offer</span>
+                    <h2 class="section-title">Business Highlights</h2>
+                    <p class="section-subtitle">
+                        Comprehensive iron and steel solutions backed by 30 years of industry experience.
+                    </p>
+                </div>
+
+                <div class="highlights-grid" style="margin-top:48px;">
+                    <article class="highlight-card stagger-item">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M3 3h18v4H3z"></path>
+                                <path d="M3 10h18v4H3z"></path>
+                                <path d="M3 17h18v4H3z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="highlight-title">Iron &amp; Steel Products</h3>
+                        <p class="highlight-desc">I Beams, Channels, Angles, Flats, Rounds and more.</p>
+                    </article>
+
+                    <article class="highlight-card stagger-item">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <path d="M12 3v18"></path>
+                                <path d="M3 12h18"></path>
+                            </svg>
+                        </div>
+                        <h3 class="highlight-title">Profile Cutting Services</h3>
+                        <p class="highlight-desc">Precision cutting as per your requirements.</p>
+                    </article>
+
+                    <article class="highlight-card stagger-item">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="3" y1="15" x2="21" y2="15"></line>
+                            </svg>
+                        </div>
+                        <h3 class="highlight-title">Steel Plates &amp; Sheets</h3>
+                        <p class="highlight-desc">MS Plates, HR Sheets, CR Sheets, Chequered Plates.</p>
+                    </article>
+
+                    <article class="highlight-card stagger-item">
+                        <div class="highlight-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="highlight-title">Dealers &amp; Stockist</h3>
+                        <p class="highlight-desc">Wide Range, Best Rates, Prompt Delivery.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             ABOUT
+             ============================================================ -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-visual reveal-scale">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600'%3E%3Crect fill='%230a1f44' width='800' height='600'/%3E%3Crect x='100' y='100' width='600' height='400' fill='%231d4ed8' opacity='0.3' rx='20'/%3E%3C/svg%3E" alt="Sumit Steel industrial facility" loading="lazy" />
+                        <div class="about-visual-overlay">
+                            <div class="about-visual-content">
+                                <div class="big-number">30</div>
+                                <div class="big-label">Years of Experience</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text reveal">
+                        <span class="section-label">About Us</span>
+                        <h2 class="section-title">ABOUT SUMIT STEEL</h2>
+                        <p style="font-weight:600; color:var(--accent-blue); margin-bottom:16px; font-size:0.9rem; letter-spacing:0.05em; text-transform:uppercase;">
+                            Your Trusted Partner in Iron &amp; Steel
+                        </p>
+                        <p>
+                            Sumit Steel, led by Sumit Raut, is engaged in iron and steel products,
+                            profile cutting services, dealership and stockist support. With 30 years
+                            of experience, the business focuses on quality steel, reliable supply,
+                            timely delivery and long-term customer relationships.
+                        </p>
+
+                        <div class="about-stats">
+                            <div class="about-stat">
+                                <div class="about-stat-value">30+</div>
+                                <div class="about-stat-label">Years</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-value">100%</div>
+                                <div class="about-stat-label">Quality Focus</div>
+                            </div>
+                            <div class="about-stat">
+                                <div class="about-stat-value">24/7</div>
+                                <div class="about-stat-label">Support</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             30 YEARS SECTION
+             ============================================================ -->
+        <section class="years-section" id="years">
+            <div class="container">
+                <div class="years-content reveal">
+                    <div class="years-number">30</div>
+                    <div class="years-label">Years of Experience</div>
+                    <p class="years-desc">
+                        Experience built around quality, service and long-term customer relationships.
+                    </p>
+                    <div class="years-divider"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             PRODUCTS
+             ============================================================ -->
+        <section class="section products" id="products">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-label">Our Products</span>
+                    <h2 class="section-title">Iron &amp; Steel Products</h2>
+                    <p class="section-subtitle">
+                        A comprehensive range of iron and steel products available for your requirements.
+                    </p>
+                </div>
+
+                <div class="products-grid">
+                    <article class="product-card stagger-item">
+                        <div class="product-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M3 3h18v4H3z"></path>
+                                <path d="M3 10h18v4H3z"></path>
+                                <path d="M3 17h18v4H3z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="product-title">I BEAMS</h3>
+                        <p class="product-desc">Structural steel beams for construction and fabrication.</p>
+                        <a href="#quote" class="product-enquire">
+                            Enquire Now
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+
+                    <article class="product-card stagger-item">
+                        <div class="product-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                                <line x1="4" y1="10" x2="20" y2="10"></line>
+                                <line x1="4" y1="16" x2="20" y2="16"></line>
+                            </svg>
+                        </div>
+                        <h3 class="product-title">CHANNELS</h3>
+                        <p class="product-desc">Steel channels for structural and industrial applications.</p>
+                        <a href="#quote" class="product-enquire">
+                            Enquire Now
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+
+                    <article class="product-card stagger-item">
+                        <div class="product-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 4l16 0l-8 16z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="product-title">ANGLES</h3>
+                        <p class="product-desc">MS angles for fabrication, construction and general engineering.</p>
+                        <a href="#quote" class="product-enquire">
+                            Enquire Now
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+
+                    <article class="product-card stagger-item">
+                        <div class="product-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="8" width="18" height="8" rx="1"></rect>
+                            </svg>
+                        </div>
+                        <h3 class="product-title">FLATS</h3>
+                        <p class="product-desc">Steel flats available in various sizes for industrial use.</p>
+                        <a href="#quote" class="product-enquire">
+                            Enquire Now
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+
+                    <article class="product-card stagger-item">
+                        <div class="product-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="8"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="product-title">ROUND BARS</h3>
+                        <p class="product-desc">MS round bars for machining, fabrication and construction.</p>
+                        <a href="#quote" class="product-enquire">
+                            Enquire Now
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+
+                    <article class="product-card stagger-item">
+                        <div class="product-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="3" y1="15" x2="21" y2="15"></line>
+                            </svg>
+                        </div>
+                        <h3 class="product-title">MS PLATES</h3>
+                        <p class="product-desc">Mild steel plates for structural and industrial applications.</p>
+                        <a href="#quote" class="product-enquire">
+                            Enquire Now
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+
+                    <article class="product-card stagger-item">
+                        <div class="product-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                            </svg>
+                        </div>
+                        <h3 class="product-title">HR SHEETS</h3>
+                        <p class="product-desc">Hot rolled sheets for general engineering and fabrication.</p>
+                        <a href="#quote" class="product-enquire">
+                            Enquire Now
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+
+                    <article class="product-card stagger-item">
+                        <div class="product-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="3" y1="15" x2="21" y2="15"></line>
+                                <line x1="9" y1="3" x2="9" y2="21"></line>
+                            </svg>
+                        </div>
+                        <h3 class="product-title">CR SHEETS</h3>
+                        <p class="product-desc">Cold rolled sheets with smooth finish for precision applications.</p>
+                        <a href="#quote" class="product-enquire">
+                            Enquire Now
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+
+                    <article class="product-card stagger-item">
+                        <div class="product-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                                <path d="M3 9h18"></path>
+                                <path d="M3 15h18"></path>
+                                <path d="M9 3v18"></path>
+                                <path d="M15 3v18"></path>
+                            </svg>
+                        </div>
+                        <h3 class="product-title">CHEQUERED PLATES</h3>
+                        <p class="product-desc">Anti-skid chequered plates for flooring and industrial use.</p>
+                        <a href="#quote" class="product-enquire">
+                            Enquire Now
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+
+                    <article class="product-card stagger-item">
+                        <div class="product-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 1v6m0 6v6"></path>
+                                <path d="M1 12h6m6 0h6"></path>
+                            </svg>
+                        </div>
+                        <h3 class="product-title">OTHER STEEL PRODUCTS</h3>
+                        <p class="product-desc">Additional steel products available on request.</p>
+                        <a href="#quote" class="product-enquire">
+                            Enquire Now
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             PROFILE CUTTING SERVICES
+             ============================================================ -->
+        <section class="section cutting" id="services">
+            <div class="container">
+                <div class="cutting-header reveal">
+                    <span class="section-label">Our Services</span>
+                    <h2 class="section-title">PRECISION PROFILE CUTTING</h2>
+                    <p class="section-subtitle" style="margin:0 auto;">
+                        Precision cutting as per your requirements — a streamlined process from enquiry to delivery.
+                    </p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item stagger-item">
+                        <div class="timeline-number">01</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Share Requirement</h3>
+                            <p class="timeline-desc">Tell us your cutting needs and specifications.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item stagger-item">
+                        <div class="timeline-number">02</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Material Selection</h3>
+                            <p class="timeline-desc">Choose from our range of quality steel products.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item stagger-item">
+                        <div class="timeline-number">03</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Precision Cutting</h3>
+                            <p class="timeline-desc">Expert cutting with attention to accuracy and finish.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item stagger-item">
+                        <div class="timeline-number">04</div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Ready for Delivery</h3>
+                            <p class="timeline-desc">Your order is prepared and ready for prompt delivery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             WHY SUMIT STEEL
+             ============================================================ -->
+        <section class="section why" id="why-us">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-label">Why Choose Us</span>
+                    <h2 class="section-title">WHY SUMIT STEEL</h2>
+                    <p class="section-subtitle">
+                        Built on 30 years of trust, quality and service.
+                    </p>
+                </div>
+
+                <div class="why-grid">
+                    <article class="why-card stagger-item">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <polyline points="9 12 12 15 16 10"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Superior Quality</h3>
+                        <p class="why-desc">We prioritize quality in every product and service we deliver.</p>
+                    </article>
+
+                    <article class="why-card stagger-item">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Timely Delivery</h3>
+                        <p class="why-desc">We understand the value of time and ensure prompt delivery.</p>
+                    </article>
+
+                    <article class="why-card stagger-item">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Customer Satisfaction</h3>
+                        <p class="why-desc">Our focus is on building lasting satisfaction with every order.</p>
+                    </article>
+
+                    <article class="why-card stagger-item">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Reliable Supply</h3>
+                        <p class="why-desc">Consistent supply of iron and steel products when you need them.</p>
+                    </article>
+
+                    <article class="why-card stagger-item">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Long Term Relationships</h3>
+                        <p class="why-desc">We value enduring partnerships built on trust and reliability.</p>
+                    </article>
+
+                    <article class="why-card stagger-item">
+                        <div class="why-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Professional Service</h3>
+                        <p class="why-desc">Expert guidance and professional support at every step.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             QUALITY / DELIVERY / SATISFACTION BANNER
+             ============================================================ -->
+        <section class="quality-banner">
+            <div class="container">
+                <div class="quality-grid">
+                    <div class="quality-item reveal">
+                        <div class="quality-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <span class="quality-text">Superior Quality</span>
+                    </div>
+
+                    <div class="quality-item reveal">
+                        <div class="quality-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="1" y="3" width="15" height="13" rx="2"></rect>
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                            </svg>
+                        </div>
+                        <span class="quality-text">Timely Delivery</span>
+                    </div>
+
+                    <div class="quality-item reveal">
+                        <div class="quality-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                            </svg>
+                        </div>
+                        <span class="quality-text">Customer Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             LOCATION
+             ============================================================ -->
+        <section class="section location" id="location">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-label">Find Us</span>
+                    <h2 class="section-title">VISIT SUMIT STEEL</h2>
+                    <p class="section-subtitle">
+                        We welcome you to visit our location in Bhosari, Pune.
+                    </p>
+                </div>
+
+                <div class="location-grid">
+                    <!-- Small Map Card -->
+                    <div class="map-card reveal-scale" role="img" aria-label="Map preview showing location: PAP J/16, MIDC Bhosari, Pune - 411026">
+                        <div class="map-visual">
+                            <div class="map-pin-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="map-label">PAP J/16, MIDC Bhosari</div>
+                            <div class="map-sublabel">Pune - 411026, Maharashtra, India</div>
+                            <a href="https://maps.app.goo.gl/iskEUrJcy863pCtb7" target="_blank" rel="noopener noreferrer" class="map-open-btn">
+                                Open in Google Maps
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Address Info -->
+                    <div class="location-info reveal">
+                        <div class="location-item">
+                            <div class="location-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="location-item-label">Address</div>
+                                <div class="location-item-value">
+                                    PAP J/16, MIDC Bhosari,<br />
+                                    Pune - 411026,<br />
+                                    Maharashtra, India
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="location-item">
+                            <div class="location-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="location-item-label">Phone</div>
+                                <div class="location-item-value">
+                                    <a href="tel:+919168531919">+91 91685 31919</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="location-item">
+                            <div class="location-item-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                    <path d="m22 7-10 5L2 7"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="location-item-label">Email</div>
+                                <div class="location-item-value">
+                                    <a href="mailto:sumitraut2012@gmail.com">sumitraut2012@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://maps.app.goo.gl/iskEUrJcy863pCtb7" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg" style="align-self:flex-start;">
+                            Open in Google Maps
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             CONTACT
+             ============================================================ -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-label">Get In Touch</span>
+                    <h2 class="section-title">LET'S TALK STEEL</h2>
+                    <p class="section-subtitle">
+                        Reach out to us for any enquiries, quotes or product information.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-card reveal">
+                        <div class="contact-person">
+                            <div class="contact-avatar">SR</div>
+                            <div>
+                                <div class="contact-person-name">Sumit Raut</div>
+                                <div class="contact-person-role">Owner — Sumit Steel</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-buttons">
+                            <a href="tel:+919168531919" class="contact-btn" aria-label="Call Sumit Steel at +91 91685 31919">
+                                <div class="contact-btn-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-btn-label">Call Now</div>
+                                    <div class="contact-btn-value">+91 91685 31919</div>
+                                </div>
+                            </a>
+
+                            <a href="mailto:sumitraut2012@gmail.com" class="contact-btn" aria-label="Email Sumit Steel at sumitraut2012@gmail.com">
+                                <div class="contact-btn-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                        <path d="m22 7-10 5L2 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-btn-label">Send Email</div>
+                                    <div class="contact-btn-value">sumitraut2012@gmail.com</div>
+                                </div>
+                            </a>
+
+                            <a href="https://maps.app.goo.gl/iskEUrJcy863pCtb7" target="_blank" rel="noopener noreferrer" class="contact-btn" aria-label="Open location in Google Maps">
+                                <div class="contact-btn-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="contact-btn-label">Open Location</div>
+                                    <div class="contact-btn-value">PAP J/16, MIDC Bhosari, Pune - 411026</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card reveal" style="justify-content:center;">
+                        <div style="text-align:center;">
+                            <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,rgba(212,168,67,0.15),rgba(212,168,67,0.05));border:2px solid var(--accent-gold);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:32px;height:32px;color:var(--accent-gold);" aria-hidden="true">
+                                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                                </svg>
+                            </div>
+                            <h3 style="font-family:'Montserrat',sans-serif;font-size:1.2rem;font-weight:800;color:var(--text-primary);margin-bottom:12px;">
+                                STEEL TODAY | STRONGER TOMORROW
+                            </h3>
+                            <p style="font-size:0.95rem;color:var(--text-secondary);line-height:1.7;margin-bottom:24px;">
+                                Your trusted partner in Iron &amp; Steel. Quality steel, reliable supply and long-term relationships.
+                            </p>
+                            <a href="#quote" class="btn btn-gold btn-lg" style="width:100%;">
+                                Request a Quote
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             REQUEST A QUOTE
+             ============================================================ -->
+        <section class="section quote" id="quote">
+            <div class="container">
+                <div class="text-center reveal">
+                    <span class="section-label">Get a Quote</span>
+                    <h2 class="section-title">REQUEST A QUOTE</h2>
+                    <p class="section-subtitle">
+                        Fill in the form below and we will get back to you with a quote.
+                    </p>
+                </div>
+
+                <div class="quote-grid">
+                    <div class="quote-info reveal">
+                        <p>
+                            Tell us about your iron and steel requirements. Whether you need products,
+                            profile cutting services or dealership support, we're here to help.
+                        </p>
+                        <div class="quote-features">
+                            <div class="quote-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>30 Years of Industry Experience</span>
+                            </div>
+                            <div class="quote-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Quality Steel Products</span>
+                            </div>
+                            <div class="quote-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Precision Profile Cutting</span>
+                            </div>
+                            <div class="quote-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Timely Delivery &amp; Reliable Supply</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="quote-form reveal" id="quoteForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="fullName">Full Name <span class="required">*</span></label>
+                                <input type="text" class="form-input" id="fullName" name="fullName" placeholder="Enter your full name" autocomplete="name" required />
+                                <span class="form-error" id="fullNameError">Please enter your full name.</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="companyName">Company Name</label>
+                                <input type="text" class="form-input" id="companyName" name="companyName" placeholder="Enter your company name" autocomplete="organization" />
+                                <span class="form-error" id="companyNameError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label" for="phone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" class="form-input" id="phone" name="phone" placeholder="Enter your phone number" autocomplete="tel" required />
+                                <span class="form-error" id="phoneError">Please enter a valid phone number.</span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="email">Email Address <span class="required">*</span></label>
+                                <input type="email" class="form-input" id="email" name="email" placeholder="Enter your email address" autocomplete="email" required />
+                                <span class="form-error" id="emailError">Please enter a valid email address.</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="requirement">Product / Requirement <span class="required">*</span></label>
+                            <input type="text" class="form-input" id="requirement" name="requirement" placeholder="e.g. I Beams, MS Plates, Profile Cutting" required />
+                            <span class="form-error" id="requirementError">Please enter your product or requirement.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message <span class="required">*</span></label>
+                            <textarea class="form-textarea" id="message" name="message" placeholder="Tell us more about your requirements..." required></textarea>
+                            <span class="form-error" id="messageError">Please enter your message.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg form-submit">
+                            Request Quote
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+
+                        <p class="form-note">
+                            This is a front-end enquiry form. Your details will not be sent until a backend is connected.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <svg class="footer-brand-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M20 25 L50 10 L80 25 L50 40 Z" fill="#3b82f6"/>
+                            <path d="M20 45 L50 30 L80 45 L50 60 Z" fill="#60a5fa"/>
+                            <path d="M20 65 L50 50 L80 65 L50 80 Z" fill="#3b82f6"/>
+                        </svg>
+                        <div>
+                            <div class="footer-brand-name">SUMIT STEEL</div>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        Expert Profile Cutters, Dealers &amp; Stockist of Iron &amp; Steel.
+                    </p>
+                    <p class="footer-tagline">Steel Today | Stronger Tomorrow</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-us">Why Us</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span>Owner: Sumit Raut</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <a href="tel:+919168531919">+91 91685 31919</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            <path d="m22 7-10 5L2 7"></path>
+                        </svg>
+                        <a href="mailto:sumitraut2012@gmail.com">sumitraut2012@gmail.com</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>PAP J/16, MIDC Bhosari,<br />Pune - 411026, Maharashtra</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">
+                    © <span id="currentYear">2025</span> SUMIT STEEL. All Rights Reserved.
+                </p>
+                <a href="https://maps.app.goo.gl/iskEUrJcy863pCtb7" target="_blank" rel="noopener noreferrer" class="footer-maps-link">
+                    Open Google Maps
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================================
+         BACK TO TOP
+         ============================================================ -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <!-- ============================================================
+         MOBILE BOTTOM BAR
+         ============================================================ -->
+    <nav class="mobile-bar" aria-label="Quick actions">
+        <div class="mobile-bar-inner">
+            <a href="tel:+919168531919" class="mobile-bar-btn" aria-label="Call Sumit Steel">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span>Call</span>
+            </a>
+            <a href="mailto:sumitraut2012@gmail.com" class="mobile-bar-btn" aria-label="Email Sumit Steel">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <path d="m22 7-10 5L2 7"></path>
+                </svg>
+                <span>Email</span>
+            </a>
+            <a href="https://maps.app.goo.gl/iskEUrJcy863pCtb7" target="_blank" rel="noopener noreferrer" class="mobile-bar-btn" aria-label="Open location in Google Maps">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Map</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+         TOAST NOTIFICATION
+         ============================================================ -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <span id="toastMessage">Thank you! Your enquiry has been received.</span>
+    </div>
+
+    <!-- ============================================================
+         JAVASCRIPT
+         ============================================================ -->
+    <script>
+        (function() {
+            'use strict';
+
+            /* ============================================================
+               THEME
+               ============================================================ */
+            function initTheme() {
+                const themeToggle = document.getElementById('themeToggle');
+                const root = document.documentElement;
+
+                function getPreferredTheme() {
+                    const saved = localStorage.getItem('sumit-steel-theme');
+                    if (saved) return saved;
+                    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                }
+
+                function applyTheme(theme) {
+                    root.setAttribute('data-theme', theme);
+                    localStorage.setItem('sumit-steel-theme', theme);
+                    const metaTheme = document.querySelector('meta[name="theme-color"]');
+                    if (metaTheme) {
+                        metaTheme.setAttribute('content', theme === 'dark' ? '#0b1424' : '#0a1f44');
+                    }
+                }
+
+                applyTheme(getPreferredTheme());
+
+                themeToggle.addEventListener('click', function() {
+                    const current = root.getAttribute('data-theme');
+                    applyTheme(current === 'dark' ? 'light' : 'dark');
+                });
+
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+                    if (!localStorage.getItem('sumit-steel-theme')) {
+                        applyTheme(e.matches ? 'dark' : 'light');
+                    }
+                });
+            }
+
+            /* ============================================================
+               MOBILE MENU
+               ============================================================ */
+            function initMobileMenu() {
+                const hamburger = document.getElementById('hamburger');
+                const mobileMenu = document.getElementById('mobileMenu');
+                const mobileBackdrop = document.getElementById('mobileBackdrop');
+                const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+                const body = document.body;
+
+                let isOpen = false;
+
+                function openMenu() {
+                    isOpen = true;
+                    hamburger.classList.add('active');
+                    hamburger.setAttribute('aria-expanded', 'true');
+                    hamburger.setAttribute('aria-label', 'Close menu');
+                    mobileMenu.classList.add('open');
+                    mobileMenu.setAttribute('aria-hidden', 'false');
+                    body.style.overflow = 'hidden';
+                }
+
+                function closeMenu() {
+                    isOpen = false;
+                    hamburger.classList.remove('active');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                    hamburger.setAttribute('aria-label', 'Open menu');
+                    mobileMenu.classList.remove('open');
+                    mobileMenu.setAttribute('aria-hidden', 'true');
+                    body.style.overflow = '';
+                }
+
+                hamburger.addEventListener('click', function() {
+                    if (isOpen) closeMenu();
+                    else openMenu();
+                });
+
+                mobileBackdrop.addEventListener('click', closeMenu);
+
+                mobileLinks.forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        closeMenu();
+                    });
+                });
+
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && isOpen) {
+                        closeMenu();
+                    }
+                });
+            }
+
+            /* ============================================================
+               SMOOTH SCROLLING
+               ============================================================ */
+            function initSmoothScrolling() {
+                const links = document.querySelectorAll('a[href^="#"]');
+                const header = document.getElementById('header');
+
+                links.forEach(function(link) {
+                    link.addEventListener('click', function(e) {
+                        const targetId = this.getAttribute('href');
+                        if (targetId === '#') return;
+
+                        const target = document.querySelector(targetId);
+                        if (!target) return;
+
+                        e.preventDefault();
+
+                        const headerHeight = header.offsetHeight;
+                        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 10;
+
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    });
+                });
+            }
+
+            /* ============================================================
+               SCROLL REVEAL
+               ============================================================ */
+            function initScrollReveal() {
+                const revealElements = document.querySelectorAll('.reveal, .reveal-scale, .stagger-item');
+
+                if (!('IntersectionObserver' in window)) {
+                    revealElements.forEach(function(el) {
+                        el.classList.add('revealed');
+                    });
+                    return;
+                }
+
+                const observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entries.length > 1) {
+                            // Staggered for groups
+                        }
+
+                        if (entry.isIntersecting) {
+                            const el = entry.target;
+                            const parent = el.parentElement;
+                            const siblings = parent ? Array.from(parent.querySelectorAll('.stagger-item')) : [];
+                            const index = siblings.indexOf(el);
+
+                            if (index >= 0) {
+                                setTimeout(function() {
+                                    el.classList.add('revealed');
+                                }, index * 100);
+                            } else {
+                                el.classList.add('revealed');
+                            }
+
+                            observer.unobserve(el);
+                        }
+                    });
+                }, {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -40px 0px'
+                });
+
+                revealElements.forEach(function(el) {
+                    observer.observe(el);
+                });
+            }
+
+            /* ============================================================
+               HEADER SCROLL
+               ============================================================ */
+            function initHeaderScroll() {
+                const header = document.getElementById('header');
+                let ticking = false;
+
+                function updateHeader() {
+                    if (window.scrollY > 20) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
+                    ticking = false;
+                }
+
+                window.addEventListener('scroll', function() {
+                    if (!ticking) {
+                        window.requestAnimationFrame(updateHeader);
+                        ticking = true;
+                    }
+                }, { passive: true });
+
+                updateHeader();
+            }
+
+            /* ============================================================
+               ACTIVE NAVIGATION
+               ============================================================ */
+            function initActiveNavigation() {
+                const sections = document.querySelectorAll('section[id]');
+                const navLinks = document.querySelectorAll('.nav-link');
+                const mobileNavLinks = document.querySelectorAll('.mobile-nav-link[href^="#"]');
+                let ticking = false;
+
+                function updateActive() {
+                    const scrollPos = window.scrollY + 120;
+
+                    let currentId = 'home';
+
+                    sections.forEach(function(section) {
+                        const top = section.offsetTop;
+                        const height = section.offsetHeight;
+                        if (scrollPos >= top && scrollPos < top + height) {
+                            currentId = section.getAttribute('id');
+                        }
+                    });
+
+                    navLinks.forEach(function(link) {
+                        link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
+                    });
+
+                    mobileNavLinks.forEach(function(link) {
+                        if (link.getAttribute('href') && link.getAttribute('href').startsWith('#')) {
+                            link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
+                        }
+                    });
+
+                    ticking = false;
+                }
+
+                window.addEventListener('scroll', function() {
+                    if (!ticking) {
+                        window.requestAnimationFrame(updateActive);
+                        ticking = true;
+                    }
+                }, { passive: true });
+
+                updateActive();
+            }
+
+            /* ============================================================
+               BACK TO TOP
+               ============================================================ */
+            function initBackToTop() {
+                const backToTop = document.getElementById('backToTop');
+                let ticking = false;
+
+                function updateVisibility() {
+                    if (window.scrollY > 500) {
+                        backToTop.classList.add('visible');
+                    } else {
+                        backToTop.classList.remove('visible');
+                    }
+                    ticking = false;
+                }
+
+                window.addEventListener('scroll', function() {
+                    if (!ticking) {
+                        window.requestAnimationFrame(updateVisibility);
+                        ticking = true;
+                    }
+                }, { passive: true });
+
+                backToTop.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+
+                updateVisibility();
+            }
+
+            /* ============================================================
+               CURRENT YEAR
+               ============================================================ */
+            function initCurrentYear() {
+                const yearEl = document.getElementById('currentYear');
+                if (yearEl) {
+                    yearEl.textContent = new Date().getFullYear();
+                }
+            }
+
+            /* ============================================================
+               FORM VALIDATION
+               ============================================================ */
+            function initForms() {
+                const form = document.getElementById('quoteForm');
+                const toast = document.getElementById('toast');
+                const toastMessage = document.getElementById('toastMessage');
+
+                if (!form) return;
+
+                const fields = {
+                    fullName: {
+                        input: document.getElementById('fullName'),
+                        error: document.getElementById('fullNameError'),
+                        validate: function(value) {
+                            return value.trim().length >= 2;
+                        },
+                        message: 'Please enter your full name.'
+                    },
+                    phone: {
+                        input: document.getElementById('phone'),
+                        error: document.getElementById('phoneError'),
+                        validate: function(value) {
+                            const cleaned = value.replace(/[\s\-\(\)]/g, '');
+                            return /^[+]?\d{10,15}$/.test(cleaned);
+                        },
+                        message: 'Please enter a valid phone number.'
+                    },
+                    email: {
+                        input: document.getElementById('email'),
+                        error: document.getElementById('emailError'),
+                        validate: function(value) {
+                            return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
+                        },
+                        message: 'Please enter a valid email address.'
+                    },
+                    requirement: {
+                        input: document.getElementById('requirement'),
+                        error: document.getElementById('requirementError'),
+                        validate: function(value) {
+                            return value.trim().length >= 2;
+                        },
+                        message: 'Please enter your product or requirement.'
+                    },
+                    message: {
+                        input: document.getElementById('message'),
+                        error: document.getElementById('messageError'),
+                        validate: function(value) {
+                            return value.trim().length >= 5;
+                        },
+                        message: 'Please enter your message.'
+                    }
+                };
+
+                function validateField(field) {
+                    const value = field.input.value;
+                    const isValid = field.validate(value);
+
+                    if (isValid) {
+                        field.input.classList.remove('error');
+                        field.error.classList.remove('visible');
+                        field.error.textContent = '';
+                    } else {
+                        field.input.classList.add('error');
+                        field.error.textContent = field.message;
+                        field.error.classList.add('visible');
+                    }
+
+                    return isValid;
+                }
+
+                Object.keys(fields).forEach(function(key) {
+                    const field = fields[key];
+                    field.input.addEventListener('blur', function() {
+                        validateField(field);
+                    });
+                    field.input.addEventListener('input', function() {
+                        if (field.input.classList.contains('error')) {
+                            validateField(field);
+                        }
+                    });
+                });
+
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    let isValid = true;
+                    Object.keys(fields).forEach(function(key) {
+                        const field = fields[key];
+                        if (!validateField(field)) {
+                            isValid = false;
+                        }
+                    });
+
+                    if (!isValid) {
+                        const firstError = form.querySelector('.form-input.error');
+                        if (firstError) {
+                            firstError.focus();
+                        }
+                        return;
+                    }
+
+                    // Show success toast (no backend)
+                    toastMessage.textContent = 'Thank you! Your enquiry has been received. We will get back to you shortly.';
+                    toast.classList.add('show');
+
+                    setTimeout(function() {
+                        toast.classList.remove('show');
+                    }, 5000);
+
+                    // Reset form
+                    form.reset();
+                    Object.keys(fields).forEach(function(key) {
+                        fields[key].input.classList.remove('error');
+                        fields[key].error.classList.remove('visible');
+                        fields[key].error.textContent = '';
+                    });
+                });
+            }
+
+            /* ============================================================
+               INIT ALL
+               ============================================================ */
+            function init() {
+                initTheme();
+                initMobileMenu();
+                initSmoothScrolling();
+                initScrollReveal();
+                initHeaderScroll();
+                initActiveNavigation();
+                initBackToTop();
+                initCurrentYear();
+                initForms();
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+
+        })();
+    </script>
+
+</body>
+</html>
